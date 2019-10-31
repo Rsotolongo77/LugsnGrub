@@ -1,5 +1,4 @@
 const Account = require("../models/account");
-const db = require("../models");
 const passport = require('passport');
 
 module.exports = {
@@ -59,34 +58,4 @@ module.exports = {
 	},
 
 
-	//------------------------------------------------------------------------------------------------------------------------//
-	//------------------------------------------------------------------------------------------------------------------------//
-
-
-	findAll: function (req, res) {
-		db.Trucks
-			.find(req.query)
-			.sort({ date: -1 })
-			.then(dbTrucks => res.json(dbTrucks))
-			.catch(err => res.status(422).json(err));
-	},
-	create: function (req, res) {
-		db.Owners
-			.create(req.body)
-			.then(dbOwners => res.json(dbOwners))
-			.catch(err => res.status(422).json(err));
-	},
-	update: function (req, res) {
-		db.Owners
-			.findOneAndUpdate({ _id: req.params.id }, req.body)
-			.then(dbOwners => res.json(dbOwners))
-			.catch(err => res.status(422).json(err));
-	},
-	remove: function (req, res) {
-		db.Owners
-			.findById({ _id: req.params.id })
-			.then(dbOwners => dbOwners.remove())
-			.then(dbOwners => res.json(dbOwners))
-			.catch(err => res.status(422).json(err));
-	}
 };
