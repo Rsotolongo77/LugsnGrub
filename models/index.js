@@ -1,5 +1,5 @@
 module.exports = {
   Account: require("./account"),
-  Account: require("./trucks"),
-  Account: require("./truckOwners"),
+  Truck: require("./truck"),
+  Owner: require("./truckOwner"),
 };
