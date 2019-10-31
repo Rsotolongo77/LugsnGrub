@@ -1,12 +1,12 @@
-const db = require("../models/trucks");
+const db = require("../models");
 
 
 module.exports = {
     findAll: function (req, res) {
-        db.Trucks
+        db.Truck
             .find(req.query)
             .sort({ date: -1 })
-            .then(dbTrucks => res.json(dbTrucks))
+            .then(data => res.json(data))
             .catch(err => res.status(422).json(err));
     }
 
