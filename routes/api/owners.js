@@ -1,7 +1,13 @@
 const router = require("express").Router();
 const truckOwnersController = require("../../controllers/truckOwnersController");
 
-// Matches with "/api/owners"
+
+// Matches with "/api/owners
+router.route("/")
+    .get(truckOwnersController.findAll)
+    .post(truckOwnersController.create);
+
+// Matches with "/api/owners/:id"
 router
     .route("/:id")
     .get(truckOwnersController.findById)

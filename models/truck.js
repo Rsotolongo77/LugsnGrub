@@ -5,7 +5,7 @@ const truckSchema = new Schema({
     truckName: { type: String, required: true },
     truckMenu: { type: String, required: true },
     truckLocation: { type: String, required: true },
-    date: { type: Date, default: Date.now }
+    schedule: { type: String, required: true }
 });
 
 const Truck = mongoose.model("Truck", truckSchema);
