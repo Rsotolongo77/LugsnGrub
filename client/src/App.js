@@ -9,6 +9,7 @@ import {
 } from 'react-router-dom';
 import Auth from "./utils/Auth";
 import Nav from "./components/Nav";
+import Jumbotron from './components/Jumbotron';
 import Login from "./components/Login";
 import Register from "./components/Register";
 import {Container} from "./components/Grid";
@@ -27,13 +28,14 @@ const AuthExample = () => (
 	<Router>
 		<div>
       		<Nav className="App-header"/>
+			<Jumbotron />
 			<Container>
 				<AuthButton/>
-				<ul style={listStyle}>
+				{/* <ul style={listStyle}>
 					<li><Link to="/public">Public Page</Link></li>
 					<li><Link to="/protected">Protected Page</Link></li>
 					<li><Link to="/register">Register a New User</Link></li>
-				</ul>
+				</ul> */}
 				<Switch>
 					<Route path="/public" component={PublicRoute}/>
 					<Route path="/login" component={Login}/>
