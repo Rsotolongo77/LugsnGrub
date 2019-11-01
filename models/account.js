@@ -7,6 +7,7 @@ const Account = new Schema({
     password: String,
     email: String,
     truckName: String,
+    truckCuisine: String,
     city: String,
 });
 

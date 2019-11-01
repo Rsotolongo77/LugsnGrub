@@ -2,4 +2,6 @@
   border-radius: 0;
 }
 
-
+#navBtn {
+   float: right;
+}

@@ -46,11 +46,12 @@ class Nav extends Component {
           aria-controls="navbarNav"
           aria-expanded="false"
           aria-label="Toggle navigation"
+
         >
           <span className="navbar-toggler-icon" />
         </button>
         <div className={`${this.state.open ? "" : "collapse "}navbar-collapse`} id="navbarNav">
-          <ul className="navbar-nav mx-auto order-0">
+          <ul className="navbar-nav">
             <li className="nav-item">
               <Link
                 onClick={this.toggleNav}
