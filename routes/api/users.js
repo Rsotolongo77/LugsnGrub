@@ -1,7 +1,7 @@
 const router = require("express").Router();
 const passport = require('passport');
 const usersController = require("../../controllers/usersController");
-const router = require("express").Router();
+const truckController = require("../../controllers/truckController");
 
 
 // Matches with "/api/users"
@@ -28,7 +28,7 @@ router.route("/")
 // Matches with "/api/users/:id"
 router
   .route("/:id")
-  .get(truckController.findById)
+  // .get(truckController.findById)
   .put(truckController.update)
   .delete(truckController.remove);
 
