@@ -20,13 +20,19 @@ class RegisterForm extends React.Component {
 					e.preventDefault();
 					return onRegister({
 						username: this.usernameElem.value,
-						password: this.passwordElem.value
+						password: this.passwordElem.value,
+						email: this.emailElem.value,
+						truckName: this.truckNameElem.value,
+						city: this.city.value,
 					});
 				}}
 			>
 				<div className="form-group">
-					<input className="form-control" ref={(input) => this.usernameElem = input} type='text' name="username" placeholder='Enter Username' /><br />
+					<input className="form-control" ref={(input) => this.usernameElem = input} type='text' name="username" placeholder='Username' /><br />
 					<input className="form-control" ref={(input) => this.passwordElem = input} type='password' name="password" placeholder='Password' /><br />
+					<input className="form-control" ref={(input) => this.emailElem = input} type='email' name="email" placeholder='Email' /><br />
+					<input className="form-control" ref={(input) => this.truckNameElem = input} type='text' name="truckName" placeholder='Enter Truck Name' /><br />
+					<input className="form-control" ref={(input) => this.cityElem = input} type='text' name="city" placeholder='City' /><br />
 					<button className="btn btn btn-primary" type='submit'>Submit</button>
 				</div>
 			</form>
