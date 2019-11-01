@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+
 import "./style.css";
 // import Login from "../LoginForm";
 
@@ -55,6 +56,7 @@ class Nav extends Component {
                 onClick={this.toggleNav}
                 className={window.location.pathname === "/" ? "nav-link active" : "nav-link"}
                 to="/login"
+
               >
                 Login
               </Link>
@@ -76,12 +78,15 @@ class Nav extends Component {
               >
                 Saved
               </Link>
-            </li> */}
+          </li> */}
           </ul>
         </div>
+
       </nav>
     );
   }
 }
 
 export default Nav;
+
+
