@@ -2,7 +2,7 @@ const router = require("express").Router();
 const passport = require('passport');
 const usersController = require("../../controllers/usersController");
 const router = require("express").Router();
-const truckOwnersController = require("../../controllers/truckOwnersController");
+
 
 // Matches with "/api/users"
 router.route("/")
@@ -19,20 +19,18 @@ router.route("/logout")
   .get(usersController.logout);
 
 
-// Matches with "/api/users/:id"
 
-
-// Matches with "/api/owners
+// Matches with "/api/users
 router.route("/")
-  .get(truckOwnersController.findAll)
-  .post(truckOwnersController.create);
+  .get(truckController.findAll)
+  .post(truckController.create);
 
-// Matches with "/api/owners/:id"
+// Matches with "/api/users/:id"
 router
   .route("/:id")
-  .get(truckOwnersController.findById)
-  .put(truckOwnersController.update)
-  .delete(truckOwnersController.remove);
+  .get(truckController.findById)
+  .put(truckController.update)
+  .delete(truckController.remove);
 
 
 /* Testing Endpoint */
