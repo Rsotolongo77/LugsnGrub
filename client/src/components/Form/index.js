@@ -5,47 +5,14 @@ function Form({ q, handleInputChange, handleFormSubmit }) {
     <form>
       <div className="form-group">
         <label htmlFor="Query">
-          <strong>Register Form</strong>
+          <strong>Truck Details</strong>
         </label>
-        <input
-          className="form-control"
-          id="username"
-          type="text"
-          value={q}
-          placeholder="username"
-          name="q"
-          onChange={handleInputChange}
-          required
-        />
-
-        <input
-          className="form-control"
-          id="password"
-          type="password"
-          value={q}
-          placeholder="password"
-          name="q"
-          onChange={handleInputChange}
-          required
-        />
-
-        <input
-          className="form-control"
-          id="email"
-          type="email"
-          value={q}
-          placeholder="email"
-          name="q"
-          onChange={handleInputChange}
-          required
-        />
-
         <input
           className="form-control"
           id="truckName"
           type="text"
           value={q}
-          placeholder="Enter Truck Name"
+          placeholder="Truck Name"
           name="q"
           onChange={handleInputChange}
           required
@@ -53,10 +20,43 @@ function Form({ q, handleInputChange, handleFormSubmit }) {
 
         <input
           className="form-control"
-          id="city"
+          id="truckMenu"
           type="text"
           value={q}
-          placeholder="City"
+          placeholder="Menu"
+          name="q"
+          onChange={handleInputChange}
+          required
+        />
+
+        <input
+          className="form-control"
+          id="truckLocation"
+          type="text"
+          value={q}
+          placeholder="Location"
+          name="q"
+          onChange={handleInputChange}
+          required
+        />
+
+        <input
+          className="form-control"
+          id="truckSchedule"
+          type="text"
+          value={q}
+          placeholder="Schedule"
+          name="q"
+          onChange={handleInputChange}
+          required
+        />
+
+        <input
+          className="form-control"
+          id="truckCuisine"
+          type="text"
+          value={q}
+          placeholder="Cuisine"
           name="q"
           onChange={handleInputChange}
           required
@@ -69,7 +69,7 @@ function Form({ q, handleInputChange, handleFormSubmit }) {
           type="submit"
           className="btn btn-lg btn-danger float-right"
         >
-          Search
+          Create Truck!
         </button>
       </div>
     </form>
