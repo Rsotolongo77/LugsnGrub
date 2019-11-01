@@ -10,10 +10,39 @@ mongoose.connect(
 
 const bookSeed = [
     {
-        truckName: "test",
-        truckMenu: "test",
-        truckLocation: "test",
-        schedule: "test"
+        truckName: "testy-tacos",
+        truckMenu: ["tacos", "mexican pizza", "enchiladas", "burritos"],
+        truckLocation: "Oviedo",
+        schedule: "Monday",
+        truckCuisine: "Mexican"
+    },
+    {
+        truckName: "italian stallion",
+        truckMenu: ["pizza", "pasta", "cannolis"],
+        truckLocation: "Oviedo",
+        schedule: ["tuesday", "friday"],
+        truckCuisine: "italian"
+    },
+    {
+        truckName: "stevens korean delights",
+        truckMenu: ["rice and steak bowl", "edamame", "noodles"],
+        truckLocation: "Sanford",
+        schedule: ["thursday", "friday", "saturday"],
+        truckCuisine: "korean"
+    },
+    {
+        truckName: "caribbean crusin",
+        truckMenu: ["rice with beans", "red snapper", "rum cake", "plantains"],
+        truckLocation: "Kissimmee",
+        schedule: ["Monday", "wednesday", "friday"],
+        truckCuisine: "caribbean"
+    },
+    {
+        truckName: "the greek guru",
+        truckMenu: ["falafel", "gyros", "hummus", "pitas"],
+        truckLocation: "altamonte",
+        schedule: "sunday",
+        truckCuisine: "mediterranean"
     }
 ];
 
