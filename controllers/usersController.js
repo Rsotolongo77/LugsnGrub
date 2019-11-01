@@ -1,4 +1,4 @@
-const Account = require("../models/account");
+const Account = require("../models");
 const passport = require('passport');
 
 module.exports = {

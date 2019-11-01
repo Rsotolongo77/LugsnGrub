@@ -6,15 +6,15 @@ export default {
         return axios.get("/api/trucks");
     },
     // Gets the book with the given id
-    getOwnerNote: function (id) {
+    updateTruck: function (id) {
         return axios.put("/api/owners/" + id);
     },
     // Deletes the book with the given id
-    deleteOwnerNote: function (id) {
+    deleteTruck: function (id) {
         return axios.delete("/api/owners/" + id);
     },
     // Saves a book to the database
-    submitOwnerNote: function (ownerNote) {
-        return axios.post("/api/owners", ownerNote);
+    submitTruck: function (createTruck) {
+        return axios.post("/api/owners", createTruck);
     }
 };
