@@ -1,5 +1,20 @@
 body {
-  margin: 0;
-  padding: 0;
-  font-family: sans-serif;
+  background-color: #e9ebee;
+}
+
+.footer {
+  position: fixed;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  background-color: #f8f9fa;
+  color: black;
+  text-align: center;
+  font-size: 25px;
+}
+
+.sidebar {
+  margin-top: 70px;
+  background-color: #e9ebee;
+  
 }
