@@ -23,6 +23,7 @@ class RegisterForm extends React.Component {
 						password: this.passwordElem.value,
 						email: this.emailElem.value,
 						truckName: this.truckNameElem.value,
+						truckPic: this.truckPicElem.value,
 						truckCuisine: this.truckCuisineElem.value,
 						city: this.cityElem.value
 					});
@@ -64,6 +65,15 @@ class RegisterForm extends React.Component {
 						ref={(input) => this.truckNameElem = input}
 						name="truckName"
 						placeholder="Enter Truck Name"
+					/>
+					<br />
+					<input
+						id="truckPic"
+						type="img"
+						className="validate form-control"
+						ref={(input) => this.truckPicElem = input}
+						name="truckPic"
+						placeholder="Insert Truck Picture"
 					/>
 					<br />
 					<input

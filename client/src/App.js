@@ -35,7 +35,7 @@ const AuthExample = () => (
 					<li><Link to="/register">Register a New User</Link></li>
 				</ul> */}
 				<Switch>
-					<Route exact path="/public" component={PublicRoute} />
+					<Route exact path="/" component={PublicRoute} />
 					<Route exact path="/login" component={Login} />
 					<Route exact path="/login" component={AuthButton} />
 					<Route exact path="/register" component={Register} />

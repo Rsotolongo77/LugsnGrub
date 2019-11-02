@@ -20,6 +20,17 @@ function Form({ q, handleInputChange, handleFormSubmit }) {
 
         <input
           className="form-control"
+          id="truckPic"
+          type="img"
+          value={q}
+          placeholder="Truck Picture"
+          name="q"
+          onChange={handleInputChange}
+          required
+        />
+
+        <input
+          className="form-control"
           id="truckMenu"
           type="text"
           value={q}
