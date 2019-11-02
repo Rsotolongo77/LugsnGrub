@@ -5,10 +5,10 @@ const db = require("./models");
 
 mongoose.connect(
     process.env.MONGODB_URI ||
-    "mongodb://localhost/reactreadinglist"
+    "mongodb://localhost/mern_authenticate_me"
 );
 
-const bookSeed = [
+const truckSeed = [
     {
         truckName: "testy-tacos",
         truckMenu: ["tacos", "mexican pizza", "enchiladas", "burritos"],
@@ -48,7 +48,7 @@ const bookSeed = [
 
 db.Truck
     .remove({})
-    .then(() => db.Truck.collection.insertMany(bookSeed))
+    .then(() => db.Truck.collection.insertMany(truckSeed))
     .then(data => {
         console.log(data.result.n + " records inserted!");
         process.exit(0);

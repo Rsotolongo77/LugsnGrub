@@ -9,6 +9,12 @@ module.exports = {
             .then(data => res.json(data))
             .catch(err => res.status(422).json(err));
     },
+    findById: function (req, res) {
+        db.Truck
+            .findById(req.params.id)
+            .then(data => res.json(data))
+            .catch(err => res.status(422).json(err));
+    },
     create: function (req, res) {
         db.Truck
             .create(req.body)
