@@ -1,7 +1,3 @@
-.navbar {
-  border-radius: 0;
-}
-
-#navBtn {
-   float: right;
+Nav  {
+    background-color: rgb(58, 58, 59);
 }
