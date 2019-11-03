@@ -15,7 +15,17 @@ import placeHolder4 from './placeHolder4.jpg';
 class PublicRoute extends Component {
     render() {
         return (
+
             <Container fluid>
+                <Row>
+                    <Col size="md-12 sm-12">
+                        <Jumbotron fluid>
+
+                        </Jumbotron>
+                    </Col>
+                </Row>
+
+
                 <Row>
                     <Col size="md-6 sm-12">
                         <Jumbotron>

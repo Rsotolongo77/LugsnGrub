@@ -27,7 +27,7 @@ const AuthExample = () => (
 	<Router>
 		<div>
 			<Nav className="App-header" />
-			<Container>
+			<Container fluid>
 				{/* <AuthButton /> */}
 				{/* <ul style={listStyle}>
 					<li><Link to="/public">Public Page</Link></li>
