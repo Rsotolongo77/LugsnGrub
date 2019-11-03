@@ -8,6 +8,7 @@ const Account = new Schema({
     email: String,
     truckName: String,
     truckCuisine: String,
+    trcukSchedule: String,
     city: String,
 });
 
