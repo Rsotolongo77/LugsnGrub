@@ -27,10 +27,19 @@ Container {
 }
 
 img {
-  height: 300px;
-  width: 500px;
-  border-top-left-radius: 10px;
-  border-top-right-radius: 10px;
+  height: 400px;
+  width: 600px;
+  margin-top: 1%;
+}
+
+.imgCont {
+  background-color: white;
+  height: 520px;
+  width: 620px;
+  border-radius: 10px;
+  margin-bottom: 2%;
+  justify-content: center;
+  display: inline-block;
 }
 
 .col {

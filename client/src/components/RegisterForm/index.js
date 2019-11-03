@@ -25,6 +25,7 @@ class RegisterForm extends React.Component {
 						truckName: this.truckNameElem.value,
 						truckPic: this.truckPicElem.value,
 						truckCuisine: this.truckCuisineElem.value,
+						truckSchedule: this.truckScheduleElem.value,
 						city: this.cityElem.value
 					});
 				}}
@@ -83,6 +84,16 @@ class RegisterForm extends React.Component {
 						ref={(input) => this.truckCuisineElem = input}
 						name="truckCuisine"
 						placeholder="Enter Truck Cuisine"
+					/>
+					<br />
+
+					<input
+						id="password"
+						type="password"
+						className="validate form-control"
+						ref={(input) => this.truckScheduleElem = input}
+						name="truckSchedule"
+						placeholder="Truck Schedule"
 					/>
 					<br />
 					<input

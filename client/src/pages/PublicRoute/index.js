@@ -20,38 +20,41 @@ class PublicRoute extends Component {
                 <Row>
                     <Col size="md-12 sm-12">
                         <Jumbotron fluid>
-
+                            <h1><b>Welcome to Lugs N' Grub!</b></h1>
+                            <h4>Let's face it. Lunch trucks now-days are an incredibly great thing. We simply aim to connect you with this greatness. So whether
+                            you want to check the featured trucks below, or you want to find where your next delicious meal will be, we are here to help!</h4>
                         </Jumbotron>
                     </Col>
                 </Row>
 
 
+
                 <Row>
                     <Col size="md-6 sm-12">
-                        <Jumbotron>
+                        <div className="imgCont">
                             <img src={placeHolder1} alt={'Feature truck'} />
-                        </Jumbotron>
+                        </div>
                     </Col>
                     <Col size="md-6 sm-12">
-                        <Jumbotron>
+                        <div className="imgCont">
                             <img src={placeHolder2} alt={'Feature truck'} />
-                        </Jumbotron>
+                        </div>
                     </Col>
                 </Row>
 
                 <Row>
                     <Col size="md-6 sm-12">
-                        <Jumbotron>
+                        <div className="imgCont">
                             <img src={placeHolder3} alt={'Feature truck'} />
-                        </Jumbotron>
+                        </div>
                     </Col>
                     <Col size="md-6 sm-12">
-                        <Jumbotron>
+                        <div className="imgCont">
                             <img src={placeHolder4} alt={'Feature truck'} />
-                        </Jumbotron>
+                        </div>
                     </Col>
                 </Row>
-            </Container>
+            </Container >
         )
     }
 }
