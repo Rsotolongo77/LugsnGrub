@@ -21,23 +21,31 @@ class PublicRoute extends Component {
                     <Col size="md-12 sm-12">
                         <Jumbotron fluid>
                             <h1><b>Welcome to Lugs N' Grub!</b></h1>
-                            <h4>Let's face it. Lunch trucks now-days are an incredibly great thing. We simply aim to connect you with this greatness. So whether
-                            you want to check the featured trucks below, or you want to find where your next delicious meal will be, we are here to help!</h4>
+                            <h4>Let's face it, lunch trucks now-days are an incredibly great thing. We simply aim to connect you with this greatness. So whether
+                            you want to checkout the featured trucks below, or you want to find where your next delicious meal will be, we are here to help!</h4>
                         </Jumbotron>
                     </Col>
                 </Row>
-
-
+                <hr></hr>
+                <Row>
+                    <Col size="md-12 sm-12">
+                        <div className='featured'>
+                            <p><b>Featured Trucks!</b></p>
+                        </div>
+                    </Col>
+                </Row>
 
                 <Row>
                     <Col size="md-6 sm-12">
                         <div className="imgCont">
                             <img src={placeHolder1} alt={'Feature truck'} />
+                            <p className='featuredDisc'>Happy Beginning</p>
                         </div>
                     </Col>
                     <Col size="md-6 sm-12">
                         <div className="imgCont">
                             <img src={placeHolder2} alt={'Feature truck'} />
+                            <p className='featuredDisc'>Hotdog Heaven</p>
                         </div>
                     </Col>
                 </Row>
@@ -46,11 +54,13 @@ class PublicRoute extends Component {
                     <Col size="md-6 sm-12">
                         <div className="imgCont">
                             <img src={placeHolder3} alt={'Feature truck'} />
+                            <p className='featuredDisc'>Zatachitos</p>
                         </div>
                     </Col>
                     <Col size="md-6 sm-12">
                         <div className="imgCont">
                             <img src={placeHolder4} alt={'Feature truck'} />
+                            <p className='featuredDisc'>England Visits</p>
                         </div>
                     </Col>
                 </Row>
