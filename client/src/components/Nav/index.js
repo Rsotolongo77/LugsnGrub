@@ -81,8 +81,9 @@ class Nav extends Component {
                 Saved
               </Link>
           </li> */}
-            <li> <AuthButton /></li>
+
           </ul>
+          <AuthButton />
         </div>
 
       </nav>

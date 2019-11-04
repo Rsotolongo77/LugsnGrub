@@ -61,14 +61,12 @@ class App extends React.Component {
 //Authbutton component / withRouter is imported from react-router
 const AuthButton = withRouter(({ history }) => (
 	Auth.isAuthenticated ? (
-		<div className="container">
-			<button className="btn btn-danger"
-				onClick={() => {
-					Auth.signout(() => history.push('/'))
-				}}>
-				Sign out
+		<button className="btn btn-danger signOut"
+			onClick={() => {
+				Auth.signout(() => history.push('/'))
+			}}>
+			Sign out
 			</button>
-		</div>
 	) : (
 			<span></span>
 		)

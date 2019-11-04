@@ -40,9 +40,6 @@ module.exports = {
 			username: req.body.username,
 			password: req.body.password,
 			email: req.body.email,
-			// truckName: req.body.truckName,
-			// truckCuisine: req.body.truckCuisine,
-			// city: req.body.city
 		}), req.body.password, (err, account) => {
 			if (err) {
 				return res.status(500).send({ error: err.message });

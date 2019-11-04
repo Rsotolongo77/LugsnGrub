@@ -22,11 +22,7 @@ class RegisterForm extends React.Component {
 						username: this.usernameElem.value,
 						password: this.passwordElem.value,
 						email: this.emailElem.value,
-						truckName: this.truckNameElem.value,
-						truckPic: this.truckPicElem.value,
-						truckCuisine: this.truckCuisineElem.value,
-						truckSchedule: this.truckScheduleElem.value,
-						city: this.cityElem.value
+
 					});
 
 				}}
@@ -61,54 +57,10 @@ class RegisterForm extends React.Component {
 						placeholder="email"
 					/>
 					<br />
-					<input
-						id="truckName"
-						type="text"
-						className="validate form-control"
-						ref={(input) => this.truckNameElem = input}
-						name="truckName"
-						placeholder="Enter Truck Name"
-					/>
-					<br />
-					<input
-						id="truckPic"
-						type="img"
-						className="validate form-control"
-						ref={(input) => this.truckPicElem = input}
-						name="truckPic"
-						placeholder="Insert Truck Picture"
-					/>
-					<br />
-					<input
-						id="truckCuisine"
-						type="text"
-						className="validate form-control"
-						ref={(input) => this.truckCuisineElem = input}
-						name="truckCuisine"
-						placeholder="Enter Truck Cuisine"
-					/>
-					<br />
-
-					<input
-						id="truckSchedule"
-						type="text"
-						className="validate form-control"
-						ref={(input) => this.truckScheduleElem = input}
-						name="truckSchedule"
-						placeholder="Truck Schedule"
-					/>
-					<br />
-					<input
-						id="city"
-						type="text"
-						className="validate form-control"
-						ref={(input) => this.cityElem = input}
-						name="city"
-						placeholder="City"
-					/>
-					<br />
 					<button className="btn btn btn-primary"
 						type='submit'>Submit</button>
+
+
 				</div>
 
 			</form>

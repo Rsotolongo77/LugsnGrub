@@ -78,3 +78,13 @@ img {
   padding-top: .8%;
   
 }
+
+.signOut {
+  background-color: rgb(209, 131, 131);
+  border-radius: 5px;
+  height: 35px;
+  float: right;
+  padding-bottom: 5px;
+  width: 110px;
+  margin-left: 1050px;
+  }
