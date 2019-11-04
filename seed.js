@@ -3,11 +3,12 @@ const db = require("./models");
 
 // This file empties the Books collection and inserts the books below
 
+// OUR MONGO CONNECTION BELOW THIS LINE
 mongoose.connect(
     process.env.MONGODB_URI ||
     "mongodb://localhost/mern_authenticate_me"
 );
-
+// TRUCK SEEDS BELOW THIS LINE
 const truckSeed = [
     {
         truckName: "testy-tacos",
@@ -45,7 +46,7 @@ const truckSeed = [
         truckCuisine: "mediterranean"
     }
 ];
-
+// INSERT MORE TRUCKS FUNCTION BELOW THIS LINE, FOLLOWED BY ERROR CATCH
 db.Truck
     .remove({})
     .then(() => db.Truck.collection.insertMany(truckSeed))
