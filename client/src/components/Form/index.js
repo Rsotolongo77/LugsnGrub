@@ -40,16 +40,6 @@ function Form({ q, handleInputChange, handleFormSubmit }) {
           required
         />
 
-        <input
-          className="form-control"
-          id="truckLocation"
-          type="text"
-          value={q}
-          placeholder="Location"
-          name="q"
-          onChange={handleInputChange}
-          required
-        />
 
         <input
           className="form-control"
