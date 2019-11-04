@@ -1,11 +1,12 @@
 import React from "react";
+import './style.css';
 
 
 
 function Footer() {
   return (
     <div className="footer">
-      <p>LugsN'Grub copy right2019</p>
+      <h3>LugsN'Grub Copywright 2019</h3>
     </div>
   );
 
