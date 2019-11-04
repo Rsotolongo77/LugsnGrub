@@ -15,6 +15,7 @@ import { Container } from "./components/Grid";
 import PublicRoute from "./pages/PublicRoute";
 import ProtectedRoute from "./pages/PublicRoute";
 import Footer from './components/Footer';
+import UserPage from '.components/users';
 import './App.css';
 
 //I want to add some basic inline styling here, even though we are bringing in styles
@@ -45,8 +46,8 @@ class App extends React.Component {
 							<Route exact path="/login" component={AuthButton} />
 							<Route exact path="/register" component={Register} />
 							<PrivateRoute exact path="/protected" component={ProtectedRoute} />
-							{/* <PrivateRoute exact path="/main" component={Main} />
-							<PrivateRoute exact path="/truckform" component={Form} /> */}
+							<PrivateRoute exact path="/users" component={UserPage} />
+							{/* <PrivateRoute exact path="/truckform" component={Form} /> */}
 							{/* <Route component={NoMatch} /> */}
 						</Switch>
 					</Container>
