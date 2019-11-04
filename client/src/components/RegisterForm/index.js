@@ -28,12 +28,14 @@ class RegisterForm extends React.Component {
 						truckSchedule: this.truckScheduleElem.value,
 						city: this.cityElem.value
 					});
+
 				}}
 			>
 
 				<div className="form-group">
 
 					<input
+						id="username"
 						type="text"
 						className="validate form-control"
 						ref={(input) => this.usernameElem = input}
@@ -88,8 +90,8 @@ class RegisterForm extends React.Component {
 					<br />
 
 					<input
-						id="password"
-						type="password"
+						id="truckSchedule"
+						type="text"
 						className="validate form-control"
 						ref={(input) => this.truckScheduleElem = input}
 						name="truckSchedule"

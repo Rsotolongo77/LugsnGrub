@@ -1,5 +1,6 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
+import { AuthButton } from "../../App"
 
 import "./style.css";
 // import Login from "../LoginForm";
@@ -80,6 +81,7 @@ class Nav extends Component {
                 Saved
               </Link>
           </li> */}
+            <li> <AuthButton /></li>
           </ul>
         </div>
 
