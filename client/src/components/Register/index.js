@@ -1,5 +1,6 @@
 import React from 'react';
 import RegisterForm from "../RegisterForm";
+import { Redirect } from 'react-router-dom';
 
 //The component for doing the actual signup of the User
 class Register extends React.Component {
@@ -19,6 +20,9 @@ class Register extends React.Component {
             .then((response) => {
                 if (response.status === 200) {
                     console.log('Succesfully registered user!');
+                    this.setState({
+                        redirectToReferrer: true
+                    })
                 }
             })
             .catch((err) => {
@@ -27,6 +31,17 @@ class Register extends React.Component {
     }
 
     render() {
+
+        const { from } = this.props.location.state || { from: { pathname: '/protected' } }
+        const { redirectToReferrer } = this.state
+        console.log(redirectToReferrer);
+
+        if (redirectToReferrer) {
+            return (
+                <Redirect to={from} />
+            )
+        }
+
         return (
             <div>
                 <h4>Register</h4>

@@ -6,10 +6,6 @@ const Account = new Schema({
     username: String,
     password: String,
     email: String,
-    truckName: String,
-    truckCuisine: String,
-    trcukSchedule: String,
-    city: String,
 });
 
 Account.plugin(passportLocalMongoose);
