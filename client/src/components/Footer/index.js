@@ -9,8 +9,6 @@ function Footer() {
       <h3>LugsN'Grub Copywright 2019</h3>
     </div>
   );
-
-
 }
 
 
