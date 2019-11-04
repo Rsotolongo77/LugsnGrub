@@ -28,6 +28,7 @@ class RegisterForm extends React.Component {
 						truckSchedule: this.truckScheduleElem.value,
 						city: this.cityElem.value
 					});
+					
 				}}
 			>
 
@@ -107,8 +108,6 @@ class RegisterForm extends React.Component {
 					<br />
 					<button className="btn btn btn-primary"
 						type='submit'>Submit</button>
-
-
 				</div>
 
 			</form>

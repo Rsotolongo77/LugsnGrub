@@ -8,7 +8,7 @@ import React from 'react'
 class ProtectedRoute extends React.Component {
 	render() {
 		return (
-			<h3></h3>
+			<h3>test</h3>
 		)
 	}
 }
