@@ -1,6 +1,6 @@
 const db = require("../models");
 
-
+// CRUD OPERATORS UNDER THIS LINE: CREATE, READ, UPDATE, DELETE
 module.exports = {
     findAll: function (req, res) {
         db.Truck
