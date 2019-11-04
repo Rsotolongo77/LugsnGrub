@@ -38,6 +38,7 @@ class App extends React.Component {
 					<li><Link to="/protected">Protected Page</Link></li>
 					<li><Link to="/register">Register a New User</Link></li>
 				</ul> */}
+
 						<Switch>
 							<Route exact path="/" component={PublicRoute} />
 							<Route exact path="/login" component={Login} />
@@ -55,6 +56,7 @@ class App extends React.Component {
 		)
 	}
 }
+
 
 //Authbutton component / withRouter is imported from react-router
 const AuthButton = withRouter(({ history }) => (
