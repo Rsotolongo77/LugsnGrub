@@ -21,7 +21,7 @@
 }
 
 .btn1 {
-    background-color: rgb(224, 224, 51); 
+    background-color: white; 
     font-size: medium;
     border-radius: 10px;
     height: 30px;
@@ -43,14 +43,14 @@
     width: 600px;
     padding: 20px;
     margin: auto;
-    background: #222222;
+    background: #ff0000c0;
     color: #fff;
     font-size: 21px;
     font-weight: bold;
     line-height: 1.3em;
     border: 2px dashed #fff;
     border-radius: 10px;
-    box-shadow: 0 0 0 4px #5c5153, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
+    box-shadow: 0 0 0 4px #c9b3b7, 2px 1px 6px 4px rgba(10, 10, 0, 0.5);
     text-shadow: -1px -1px #ac9b9b;
     font-weight: normal;
  }
