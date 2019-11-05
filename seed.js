@@ -6,7 +6,7 @@ const db = require("./models");
 // OUR MONGO CONNECTION BELOW THIS LINE
 mongoose.connect(
     process.env.MONGODB_URI ||
-    "mongodb://localhost/mern_authenticate_me"
+    "mongodb://localhost/LugsNGrub"
 );
 // TRUCK SEEDS BELOW THIS LINE
 const truckSeed = [

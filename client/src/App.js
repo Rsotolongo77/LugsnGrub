@@ -13,7 +13,7 @@ import { Login } from "./components/Login";
 import Register from "./components/Register";
 import { Container } from "./components/Grid";
 import PublicRoute from "./pages/PublicRoute";
-import ProtectedRoute from "./pages/PublicRoute";
+// import ProtectedRoute from "./pages/PublicRoute";
 import Footer from './components/Footer';
 import users from './components/users';
 import TruckForm from './components/TruckForm';
@@ -47,7 +47,7 @@ class App extends React.Component {
 							<Route exact path="/login" component={Login} />
 							<Route exact path="/login" component={AuthButton} />
 							<Route exact path="/register" component={Register} />
-							<PrivateRoute exact path="/protected" component={ProtectedRoute} />
+							<PrivateRoute exact path="/protected" component={users} />
 							<PrivateRoute exact path="/users" component={users} />
 							<PrivateRoute exact path="/truckmgt" component={TruckMgt} />
 							<PrivateRoute exact path="/truckform" component={TruckForm} />

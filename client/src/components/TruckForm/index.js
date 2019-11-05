@@ -1,11 +1,11 @@
 import React from 'react';
 import {
-    BrowserRouter as Router,
-    Route,
-    Link,
+    // BrowserRouter as Router,
+    // Route,
+    // Link,
     Redirect,
-    Switch,
-    withRouter
+    // Switch,
+    // withRouter
 } from 'react-router-dom';
 import Form from '../Form';
 import truckplaceholder from './truckplaceholder.jpg';
@@ -62,7 +62,7 @@ class TruckForm extends React.Component {
 
                 <div className='truckLanding'>
                     <Row>
-                        <Link to="/truckmgt">Truck Management</Link>
+                        {/* <Link to="/truckmgt">Truck Management</Link> */}
                         <Col size="md-6 sm-12">
                             <img src={truckplaceholder} alt={'Truck Mgt'} id='truckPlaceHolder' />
                         </Col>
