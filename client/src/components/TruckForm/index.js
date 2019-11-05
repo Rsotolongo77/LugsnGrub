@@ -1,9 +1,18 @@
 import React from 'react';
+import {
+    BrowserRouter as Router,
+    Route,
+    Link,
+    Redirect,
+    Switch,
+    withRouter
+} from 'react-router-dom';
 import Form from '../Form';
 import truckplaceholder from './truckplaceholder.jpg';
 import { Col, Row, Container } from "../../components/Grid";
 import './style.css';
 import API from "../../utils/API"
+import { usernameTransfer } from "../../components/Login";
 
 
 
@@ -29,6 +38,7 @@ class TruckForm extends React.Component {
     handleFormSubmit = event => {
         event.preventDefault();
         API.submitTruck({
+            username: usernameTransfer,
             truckName: this.state.truckName,
             truckPic: this.state.truckPic,
             truckMenu: this.state.truckMenu,
@@ -36,8 +46,11 @@ class TruckForm extends React.Component {
             truckCuisine: this.state.truckCuisine
 
         })
-            .then(res => console.log(res)
-            )
+            .then(res => {
+                console.log(res)
+                // window.location = "/truckmgt";
+                return < Redirect to='/truckmgt' />
+            })
             .catch(err => console.log(err));
     }
 
@@ -49,6 +62,7 @@ class TruckForm extends React.Component {
 
                 <div className='truckLanding'>
                     <Row>
+                        <Link to="/truckmgt">Truck Management</Link>
                         <Col size="md-6 sm-12">
                             <img src={truckplaceholder} alt={'Truck Mgt'} id='truckPlaceHolder' />
                         </Col>

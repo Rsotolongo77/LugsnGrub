@@ -6,6 +6,10 @@ const Account = new Schema({
     username: String,
     password: String,
     email: String,
+    trucks: [{
+        type: Schema.Types.ObjectId,
+        ref: 'Truck'
+    }]
 });
 
 Account.plugin(passportLocalMongoose);

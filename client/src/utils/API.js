@@ -2,8 +2,9 @@ import axios from "axios";
 
 export default {
     // Gets all trucks
-    getTrucks: function () {
-        return axios.get("/api/trucks");
+    getTrucks: function (username) {
+        console.log(username)
+        return axios.get("/api/trucks/" + username);
     },
     // Gets the book with the given id
     updateTruck: function (id) {
@@ -17,6 +18,6 @@ export default {
     submitTruck: function (createTruck) {
         console.log("Create Truck:", createTruck);
 
-        return axios.post("/api/trucks/owners", createTruck);
+        return axios.post("/api/trucks/" + createTruck.username, createTruck);
     }
 }; 
