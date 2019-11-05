@@ -21,18 +21,18 @@
 }
 
 .btn1 {
-    background-color: white; 
-    font-size: medium;
-    border-radius: 10px;
-    height: 30px;
+    background-color: rgb(189, 188, 188); 
+    font-size: x-large;
+    border-radius: 5px;
+    height: 40px;
     width: 150px;
     border: 1px solid black;
     margin-top: 3%;
-    margin-right: 1%;
-    margin-left: 1%;
+    margin-right: 5%;
+    margin-left: 0%;
     margin-bottom: 3%;
-    
-  }
+    padding: 3px;
+    }
 
   #repairPic {
     margin-top: 2%;
