@@ -6,7 +6,6 @@ function Form({ q, handleInputChange, handleFormSubmit }) {
     <form>
       <div className="form-group">
         <label htmlFor="Query">
-          <strong>Truck Details</strong>
         </label>
         <input
           className="form-control"
@@ -19,6 +18,8 @@ function Form({ q, handleInputChange, handleFormSubmit }) {
           required
         />
 
+        <br></br>
+
         <input
           className="form-control"
           id="truckPic"
@@ -29,6 +30,8 @@ function Form({ q, handleInputChange, handleFormSubmit }) {
           onChange={handleInputChange}
           required
         />
+
+        <br></br>
 
         <input
           className="form-control"
@@ -41,6 +44,7 @@ function Form({ q, handleInputChange, handleFormSubmit }) {
           required
         />
 
+        <br></br>
 
         <input
           className="form-control"
@@ -53,6 +57,8 @@ function Form({ q, handleInputChange, handleFormSubmit }) {
           required
         />
 
+        <br></br>
+
         <input
           className="form-control"
           id="truckCuisine"
@@ -64,6 +70,8 @@ function Form({ q, handleInputChange, handleFormSubmit }) {
           required
         />
 
+        <br></br>
+
       </div>
       <div className="pull-right">
         <button
@@ -71,7 +79,7 @@ function Form({ q, handleInputChange, handleFormSubmit }) {
           type="submit"
           className="btn btn-lg btn-danger float-right"
         >
-          Create Truck!
+          Submit
         </button>
       </div>
     </form>

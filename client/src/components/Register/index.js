@@ -43,8 +43,10 @@ class Register extends React.Component {
         }
 
         return (
-            <div>
-                <h4>Register</h4>
+            <div id='registerCont'>
+                <br></br>
+                <br></br>
+                <h2>Register Wheels</h2>
                 <RegisterForm onRegister={this.register} />
             </div>
         )

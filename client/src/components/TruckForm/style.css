@@ -1,0 +1,19 @@
+.truckLanding {
+    background-color: white;
+    color: teal;
+    justify-content: center;
+    margin: auto;
+    width: 1300px;
+    height: 600px;
+}
+
+#truckPlaceHolder {
+    float: left;
+    margin-top: 10%;
+    margin-left: 2%;
+}
+
+.truckDetails {
+    margin-right: 10%;
+    margin-top: 10%;
+}
