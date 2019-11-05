@@ -1,7 +1,7 @@
 import axios from "axios";
 
 export default {
-    // Gets all books
+    // Gets all trucks
     getTrucks: function () {
         return axios.get("/api/trucks");
     },
@@ -11,10 +11,12 @@ export default {
     },
     // Deletes the book with the given id
     deleteTruck: function (id) {
-        return axios.delete("/api/owners" + id);
+        return axios.delete("/api/trucks/owners" + id);
     },
     // Saves a book to the database
     submitTruck: function (createTruck) {
-        return axios.post("/api/owners", createTruck);
+        console.log("Create Truck:", createTruck);
+
+        return axios.post("/api/trucks/owners", createTruck);
     }
-};
+}; 

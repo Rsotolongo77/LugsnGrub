@@ -1,7 +1,7 @@
 import React from "react";
 
 
-function Form({ q, handleInputChange, handleFormSubmit }) {
+function Form(props) {
   return (
     <form>
       <div className="form-group">
@@ -11,10 +11,10 @@ function Form({ q, handleInputChange, handleFormSubmit }) {
           className="form-control"
           id="truckName"
           type="text"
-          value={q}
+          value={props.truckName}
           placeholder="Truck Name"
-          name="q"
-          onChange={handleInputChange}
+          name="truckName"
+          onChange={props.handleInputChange}
           required
         />
 
@@ -24,10 +24,10 @@ function Form({ q, handleInputChange, handleFormSubmit }) {
           className="form-control"
           id="truckPic"
           type="img"
-          value={q}
+          value={props.truckPic}
           placeholder="Truck Picture"
-          name="q"
-          onChange={handleInputChange}
+          name="truckPic"
+          onChange={props.handleInputChange}
           required
         />
 
@@ -37,10 +37,10 @@ function Form({ q, handleInputChange, handleFormSubmit }) {
           className="form-control"
           id="truckMenu"
           type="text"
-          value={q}
+          value={props.truckMenu}
           placeholder="Menu"
-          name="q"
-          onChange={handleInputChange}
+          name="truckMenu"
+          onChange={props.handleInputChange}
           required
         />
 
@@ -50,10 +50,10 @@ function Form({ q, handleInputChange, handleFormSubmit }) {
           className="form-control"
           id="truckSchedule"
           type="text"
-          value={q}
+          value={props.truckSchedule}
           placeholder="Schedule"
-          name="q"
-          onChange={handleInputChange}
+          name="truckSchedule"
+          onChange={props.handleInputChange}
           required
         />
 
@@ -63,10 +63,10 @@ function Form({ q, handleInputChange, handleFormSubmit }) {
           className="form-control"
           id="truckCuisine"
           type="text"
-          value={q}
+          value={props.truckCuisine}
           placeholder="Cuisine"
-          name="q"
-          onChange={handleInputChange}
+          name="truckCuisine"
+          onChange={props.handleInputChange}
           required
         />
 
@@ -75,7 +75,7 @@ function Form({ q, handleInputChange, handleFormSubmit }) {
       </div>
       <div className="pull-right">
         <button
-          onClick={handleFormSubmit}
+          onClick={props.handleFormSubmit}
           type="submit"
           className="btn btn-lg btn-danger float-right"
         >
