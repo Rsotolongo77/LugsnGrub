@@ -2,6 +2,7 @@ import React from 'react';
 import './style.css'
 import { Container } from '../Grid';
 import truckRepairPic from './truckRepairPic.jpg';
+import { Link } from "react-router-dom";
 
 class user extends React.Component {
     render() {
@@ -13,10 +14,17 @@ class user extends React.Component {
                     <div className='ownerLandingBtn'>
                         <br></br>
                         <div className="stitched">
-                            <button className='btn1'>Create Truck!</button>
-                            <button className='btn1'>Update Truck</button>
-                            <button className='btn1'>Delete Truck</button>
+                            <Link className='btn1' to="/truckForm">Create Truck!</Link>
+                            <Link className='btn1' to="/truckForm">Update Truck</Link>
+                            <Link className='btn1' to="/truckForm">Delete Truck</Link>
+
+
+                            {/* <DeleteBtn onClick={() => this.deleteBook(book._id)} /> */}
+
+
+
                         </div>
+
                         <br></br>
                         <img src={truckRepairPic} alt={'Truck Mgt'} id='repairPic' />
                     </div>
@@ -25,5 +33,6 @@ class user extends React.Component {
         )
     }
 }
+
 
 export default user;
