@@ -1,4 +1,12 @@
 import React from "react";
+import {
+  // BrowserRouter as Router,
+  // Route,
+  Link,
+  // Redirect,
+  // Switch,
+  // withRouter
+} from 'react-router-dom';
 
 
 function Form(props) {
@@ -78,10 +86,12 @@ function Form(props) {
           onClick={props.handleFormSubmit}
           type="submit"
           className="btn btn-lg btn-danger float-right"
+
         >
           Submit
         </button>
       </div>
+      <Link to="/truckmgt">Truck Mgt</Link>
     </form>
   );
 }
