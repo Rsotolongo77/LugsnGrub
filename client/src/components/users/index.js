@@ -15,11 +15,6 @@ class user extends React.Component {
                         <br></br>
                         <div className="stitched">
                             <Link className='btn1' to="/truckForm">Create Truck!</Link>
-                            <Link className='btn1' to="/truckForm">Update Truck</Link>
-                            <Link className='btn1' to="/truckForm">Delete Truck</Link>
-                            {/* <DeleteBtn onClick={() => this.deleteBook(book._id)} /> */}
-
-
 
                         </div>
 
