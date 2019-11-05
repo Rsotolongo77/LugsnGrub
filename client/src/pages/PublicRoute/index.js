@@ -37,33 +37,41 @@ class PublicRoute extends Component {
                 </Row>
 
                 <Row>
-                    <Col size="md-6 sm-12">
-                        <div className="imgCont">
-                            <img src={placeHolder1} alt={'Feature truck'} />
-                            <p className='featuredDisc'>Happy Beginning</p>
-                        </div>
-                    </Col>
-                    <Col size="md-6 sm-12">
-                        <div className="imgCont">
-                            <img src={placeHolder2} alt={'Feature truck'} />
-                            <p className='featuredDisc'>Hotdog Heaven</p>
-                        </div>
-                    </Col>
+                    <div id="leftCol">
+                        <Col size="md-6 sm-12">
+                            <div className="imgCont">
+                                <img src={placeHolder1} alt={'Feature truck'} />
+                                <p className='featuredDisc'>Happy Beginning</p>
+                            </div>
+                        </Col>
+                    </div>
+                    <div id='rightCol'>
+                        <Col size="md-6 sm-12">
+                            <div className="imgCont">
+                                <img src={placeHolder2} alt={'Feature truck'} />
+                                <p className='featuredDisc'>Hotdog Heaven</p>
+                            </div>
+                        </Col>
+                    </div>
                 </Row>
 
                 <Row>
-                    <Col size="md-6 sm-12">
-                        <div className="imgCont">
-                            <img src={placeHolder3} alt={'Feature truck'} />
-                            <p className='featuredDisc'>Zatachitos</p>
-                        </div>
-                    </Col>
-                    <Col size="md-6 sm-12">
-                        <div className="imgCont">
-                            <img src={placeHolder4} alt={'Feature truck'} />
-                            <p className='featuredDisc'>England Visits</p>
-                        </div>
-                    </Col>
+                    <div id='leftCol'>
+                        <Col size="md-6 sm-12" id="rightCol">
+                            <div className="imgCont">
+                                <img src={placeHolder3} alt={'Feature truck'} />
+                                <p className='featuredDisc'>Zatachitos</p>
+                            </div>
+                        </Col>
+                    </div>
+                    <div id='rightCol'>
+                        <Col size="md-6 sm-12" id="rightCol">
+                            <div className="imgCont">
+                                <img src={placeHolder4} alt={'Feature truck'} />
+                                <p className='featuredDisc'>England Visits</p>
+                            </div>
+                        </Col>
+                    </div>
                 </Row>
             </Container >
         )
