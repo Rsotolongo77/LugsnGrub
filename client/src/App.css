@@ -43,19 +43,23 @@ Container {
 }
 
 img {
-  height: 400px;
-  width: 600px;
-  margin-top: 1%;
+  height: 370px;
+  width: 570px;
+  margin-top: 2.5%;
 }
 
 .imgCont {
   background-color: white;
-  height: 520px;
-  width: 620px;
+  height: 500px;
+  width: 600px;
   border-radius: 10px;
-  margin-bottom: 5%;
+  margin-bottom: 12%;
   justify-content: center;
   display: inline-block;
+}
+
+#leftCol {
+  margin-left: 75px;
 }
 
 .featuredDisc {

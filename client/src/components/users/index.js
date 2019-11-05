@@ -12,7 +12,7 @@ class user extends React.Component {
                     <h4>We are excited to have join our community as we try and bring customer and truck owner together. </h4>
                     <div className='ownerLandingBtn'>
                         <br></br>
-                        <div class="stitched">
+                        <div className="stitched">
                             <button className='btn1'>Create Truck!</button>
                             <button className='btn1'>Update Truck</button>
                             <button className='btn1'>Delete Truck</button>
