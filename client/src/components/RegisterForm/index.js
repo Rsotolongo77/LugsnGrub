@@ -28,7 +28,7 @@ class RegisterForm extends React.Component {
 				}}
 			>
 
-				<div className="form-group">
+				<div className="form-group" id='registerCon2' >
 
 					<input
 						id="username"

@@ -53,7 +53,7 @@ img {
   height: 520px;
   width: 620px;
   border-radius: 10px;
-  margin-bottom: 2%;
+  margin-bottom: 5%;
   justify-content: center;
   display: inline-block;
 }
@@ -89,4 +89,43 @@ img {
   margin-left: 1050px;
   }
 
+  .loginForm {
+    background-color: rgba(0, 0, 0, 0.322);
+    color: white;
+    justify-content: center;
+    display: inline-block;
+    width: 850px;
+    height: 450px;
+    border-radius: 20px;
+    margin-top: 5%;
+    padding-top: 5%;
+  }
+
+  #loginForm2 {
+    width: 500px;
+    justify-content: center;
+    display: inline-block;
+    margin-top: 4%;
+  }
+
+ #registerCont {
+    background-color: rgba(0, 0, 0, 0.322);
+    color: white;
+    justify-content: center;
+    display: inline-block;
+    width: 900px;
+    height: 500px;
+    border-radius: 20px;
+    margin-top: 7%;
+
+ }
+
+ #registerCon2 {
+    width: 500px;
+    justify-content: center;
+    display: inline-block;
+    margin-top: 1%;
+    margin-bottom: 5%;
+    padding-top: 7%;
+ }
   
