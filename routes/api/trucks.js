@@ -10,10 +10,11 @@ router.route("/owners")
     .get(truckController.findAll)
     .post(truckController.create);
 
-// Matches with "/api/users/:id"
+// Matches with "/api/trucks/:iusername
 router
-    .route("/:id")
-    // .get(truckController.findById)
+    .route("/:username")
+    .get(truckController.findById)
+    .post(truckController.create)
     .put(truckController.update)
     .delete(truckController.remove);
 

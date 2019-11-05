@@ -10,17 +10,35 @@ module.exports = {
             .catch(err => res.status(422).json(err));
     },
     findById: function (req, res) {
-        db.Truck
-            .findById(req.params.id)
-            .then(data => res.json(data))
+        db.Account
+            .find({ username: req.params.username })
+            .populate("trucks")
+            .then(data => {
+                console.log(data)
+                res.json(data)
+            })
             .catch(err => res.status(422).json(err));
     },
     create: function (req, res) {
         db.Truck
             .create(req.body)
-            .then(data => res.json(data))
-            .catch(err => res.status(422).json(err));
+            .then(data => {
+                console.log(req.params.username)
+                return db.Account.findOneAndUpdate({ username: req.params.username }, { $push: { trucks: data._id } }, { new: true });
+            })
+            .then(data => {
+                res.json(data)
+            })
+            .catch(function (err) {
+                res.json(err);
+            });
     },
+    // create: function (req, res) {
+    //     db.Truck
+    //         .create(req.body)
+    //         .then(data => res.json(data))
+    //         .catch(err => res.status(422).json(err));
+    // },
     update: function (req, res) {
         db.Truck
             .findOneAndUpdate({ _id: req.params.id }, req.body)
