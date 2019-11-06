@@ -1,12 +1,12 @@
 import React from "react";
-import {
-  // BrowserRouter as Router,
-  // Route,
-  Link,
-  // Redirect,
-  // Switch,
-  // withRouter
-} from 'react-router-dom';
+// import {
+//   // BrowserRouter as Router,
+//   // Route,
+//   // Link,
+//   // Redirect,
+//   // Switch,
+//   // withRouter
+// } from 'react-router-dom';
 
 
 
@@ -92,7 +92,7 @@ function Form(props) {
           type="submit"
           className="btn btn-lg btn-danger float-right"
         >
-          {/* <Redirect to="/truckmgt" /> */}
+
           Submit
         </button>
       </div>

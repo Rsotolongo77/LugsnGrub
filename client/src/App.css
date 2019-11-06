@@ -17,6 +17,7 @@ body {
     padding: 0px;
     text-align: center;
     overflow-x: hidden;
+    /* background-color: rgb(3, 184, 169); */
     /* The image used */
   background-image: url("./components/TruckImages/FoodTruckFestival.jpg");
     justify-content: center;

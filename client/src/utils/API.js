@@ -11,12 +11,12 @@ export default {
         return axios.get("/api/trucks/truck/" + id);
     },
     // Gets the book with the given id
-    updateTruck: function (id) {
-        return axios.put("/api/owners" + id);
+    updateTruck: function (updateTruck) {
+        return axios.put("/api/trucks/truck/" + updateTruck.truckName);
     },
     // Deletes the book with the given id
     deleteTruck: function (id) {
-        return axios.delete("/api/trucks/owners" + id);
+        return axios.delete("/api/trucks/truck" + id);
     },
     // Saves a book to the database
     submitTruck: function (createTruck) {
