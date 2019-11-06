@@ -18,12 +18,20 @@ body {
     text-align: center;
     overflow-x: hidden;
     background-color: lightseagreen;
+    justify-content: center;
+    display: inline-block;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 Container {
   margin: 0;
   padding: 0;
   border: 0;
+  justify-content: center;
+  display: inline-block;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .featured {
@@ -37,29 +45,50 @@ Container {
   margin-bottom: 3%;
   padding-top: 10px;
   height: 60px;
-  width: 96%;
+  width: 80%;
   justify-content: center;
   display: inline-block;
+  margin-right: auto;
+  margin-left: auto;
+}
+
+#truckImgHome {
+  height: 270px;
+  width: 470px;
+  margin-top: 2.5%;
+}
+
+#truckMgtHome {
+  height: 270px;
+  width: 470px;
+  margin-top: 2.5%;
+}
+
+#homeRow {
+  justify-content: center;
+  display: inline-block;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 img {
-  height: 370px;
-  width: 570px;
-  margin-top: 2.5%;
+  height: 430px;
+  width: 550px;
+  margin-top: 1%;
 }
 
 .imgCont {
   background-color: white;
-  height: 500px;
-  width: 600px;
+  height: 400px;
+  width: 500px;
   border-radius: 10px;
-  margin-bottom: 12%;
+  margin-bottom: 7%;
   justify-content: center;
   display: inline-block;
 }
 
 #leftCol {
-  margin-left: 75px;
+  margin-left: 175px;
 }
 
 .featuredDisc {
