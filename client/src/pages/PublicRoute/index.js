@@ -25,6 +25,19 @@ class PublicRoute extends Component {
                             <h4>Let's face it, lunch trucks now-days are an incredibly great thing. We simply aim to connect you with this greatness. So whether
                             you want to checkout the featured trucks below, or you want to find where your next delicious meal will be, we are here to help!</h4>
                         </Jumbotron>
+                        <div className="input-group mb-3">
+                        <select className="custom-select" id="inputGroupSelect02">
+                            <option selected>Choose Food Cuisine</option>
+                            <option value="1">Cajun</option>
+                            <option value="2">Tacos</option>
+                            <option value="3">Hot Dogs</option>
+                            <option value="4">Fish</option>
+                            <option value="5">Chinese</option>
+                        </select>
+                        <div className="input-group-append">
+                            <label class="input-group-text" for="inputGroupSelect02">Options</label>
+                        </div>
+                        </div>
                     </Col>
                 </Row>
                 <hr></hr>
