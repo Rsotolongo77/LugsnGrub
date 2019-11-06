@@ -17,10 +17,14 @@ body {
     padding: 0px;
     text-align: center;
     overflow-x: hidden;
-    background-color: lightseagreen;
+    /* The image used */
+  background-image: url("./components/TruckImages/FoodTruckFestival.jpg");
+  
 }
 
-Container {
+
+
+.Container {
   margin: 0;
   padding: 0;
   border: 0;
