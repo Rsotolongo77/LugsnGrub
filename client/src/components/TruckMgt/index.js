@@ -7,6 +7,8 @@ import Cajunfoodtruck from "../TruckImages/Cajun foodtruck.jpg";
 import './style.css';
 import { Link } from 'react-router-dom';
 
+let truckId;
+
 
 class TruckMgt extends React.Component {
 
@@ -31,6 +33,17 @@ class TruckMgt extends React.Component {
             })
             .catch(err => console.log(err))
     }
+    getId = (id) => {
+        truckId = id
+        this.routeChange()
+
+    }
+
+    routeChange() {
+        let path = "/updateform";
+        this.props.history.push(path);
+    }
+
 
     render() {
         return (
@@ -47,22 +60,21 @@ class TruckMgt extends React.Component {
                         Create Truck
                                 </Link>
                     <hr id='line'></hr>
-                    {this.state.user.map(truck => (
-                        <div>
+                    {this.state.user.map((truck, i) => (
 
+                        < div key={i} >
                             <br></br>
                             <br></br>
                             <h2 id='truckHeadMain'>Truck Name: {truck.truckName}</h2>
                             <img src={Cajunfoodtruck} alt={'Feature truck'} id='detailsPic' />
-                            <div class='details'>
+                            <div className='details'>
 
                                 <h3 id='truckHead'>Menu: {truck.truckMenu}</h3>
                                 <h3 id='truckHead'>Schedule: {truck.truckSchedule}</h3>
                                 <h3 id='truckHead'>Cuisine: {truck.truckCuisine}</h3>
                                 <Link id='updateBtn'
-                                    onClick={this.toggleNav}
-                                    className={window.location.pathname === "/saved" ? "nav-link active" : "nav-link"}
-                                    to="/truckform"
+                                    onClick={() => this.getId(truck._id)}
+                                    to="/updateform"
                                 >
                                     Update Truck
                                 </Link>
@@ -95,4 +107,4 @@ class TruckMgt extends React.Component {
 
 }
 
-export default TruckMgt;
+export { TruckMgt, truckId };

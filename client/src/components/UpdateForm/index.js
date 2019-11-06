@@ -8,11 +8,12 @@ import {
     // withRouter
 } from 'react-router-dom';
 import Form from '../Form';
-import truckplaceholder from './truckplaceholder.jpg';
+// import truckplaceholder from './truckplaceholder.jpg';
 import { Col, Row, Container } from "../../components/Grid";
 import './style.css';
 import API from "../../utils/API"
 import { usernameTransfer } from "../../components/Login";
+import { truckId } from "../TruckMgt"
 
 
 
@@ -20,14 +21,43 @@ import { usernameTransfer } from "../../components/Login";
 class TruckForm extends React.Component {
     // track all the form values in state
     state = {
-        id: "",
+        id: truckId,
         truckName: "",
         truckPic: "",
         truckMenu: "",
         truckSchedule: "",
         truckCuisine: ""
     };
+    componentDidMount() {
+        console.log(truckId)
+        this.getTruck()
 
+
+    }
+
+    getTruck = () => {
+        console.log(truckId)
+        API.getTruck(truckId)
+            .then(data => {
+
+                let truck = data.data[0]
+
+
+                this.setState({
+                    truckName: truck.truckName,
+                    truckPic: truck.truckPic,
+                    truckMenu: truck.truckMenu,
+                    truckSchedule: truck.truckSchedule,
+                    truckCuisine: truck.truckCuisine
+
+
+                })
+                console.log(this.state.user)
+            })
+            .catch(err => console.log(err))
+
+
+    }
     handleInputChange = event => {
         const { name, value } = event.target;
         this.setState({
@@ -66,12 +96,13 @@ class TruckForm extends React.Component {
             <Container fluid >
                 <br></br>
                 <br></br>
+                <h1>Update Truck</h1>
 
                 <div className='truckLanding'>
                     <Row>
                         {/* <Link to="/truckmgt">Truck Management</Link> */}
                         <Col size="md-6 sm-12">
-                            <img src={truckplaceholder} alt={'Truck Mgt'} id='truckPlaceHolder' />
+                            <img src="" alt={'Truck Mgt'} id='truckPlaceHolder' />
                         </Col>
                         <Col size="md-6 sm-12">
                             <div className='truckDetails'>
@@ -96,4 +127,4 @@ class TruckForm extends React.Component {
     }
 }
 
-export default TruckForm;
+export default TruckForm; 

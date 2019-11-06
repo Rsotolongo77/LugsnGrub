@@ -18,5 +18,12 @@ router
     .put(truckController.update)
     .delete(truckController.remove);
 
+// Matches with "/api/trucks/truck/:id
+router
+    .route("/truck/:id")
+    .get(truckController.findTruckById)
+    .put(truckController.update)
+    .delete(truckController.remove);
+
 
 module.exports = router;
