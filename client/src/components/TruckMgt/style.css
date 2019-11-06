@@ -1,6 +1,63 @@
 #contDiv{
     background-color: white;
+    width: 70%;
     color: teal;
     border-radius: 30px;
     margin-top: 3%;
+    justify-content: center;
+    display: inline-block;
 }
+
+.details {
+    background-color: rgba(190, 190, 158, 0.349);
+    margin-top: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    color: #555;
+    font-size: 22px;
+    padding: 0 !important;
+    width: 570px;
+    font-family: courier, monospace;
+    border: 1px solid #b3b2b2;
+    border-radius: 5px;
+}
+
+
+#detailsPic {
+    /* border: 1px solid rgb(101, 103, 197); */
+    border-radius: 10px;
+}
+
+#header {
+    margin-top: 5%;
+    margin-bottom: 2%;
+    text-shadow: .1em .1em .2em rgba(0, 0, 0, 0.6);
+}
+
+#truckHeadMain {
+    margin: 0;
+    font-family: courier, monospace;
+    color: teal;
+    padding-top: 1%;
+    font-size: 40px;
+    /* text-shadow: .1em .1em .2em rgba(0, 0, 0, 0.6); */
+}
+
+#truckHead {
+    margin-top: 0;
+    /* font-family: 'Signika Negative', sans-serif; */
+    list-style: none;
+    border-bottom: 1px dotted rgb(167, 165, 165);
+    text-indent: 25px;
+    height: auto;
+    padding: 10px;
+    text-transform: capitalize;
+  
+}
+
+#line {
+    border: 1px solid teal;
+}
+
+
+

@@ -38,14 +38,23 @@ class TruckMgt extends React.Component {
                 <div id='contDiv'>
 
                     <h1 id='header'>Truck Management Page</h1>
+                    <hr id='line'></hr>
                     {this.state.user.map(truck => (
                         <div>
                             <br></br>
+                            <br></br>
                             <h2 id='truckHeadMain'>Truck Name: {truck.truckName}</h2>
-                            <img src={Cajunfoodtruck} alt={'Feature truck'} />
-                            <h3 id='truckHead'>Truck Menu: {truck.truckMenu}</h3>
-                            <h3 id='truckHead'>Truck Schedule: {truck.truckSchedule}</h3>
-                            <h3 id='truckHead'>Truck Cuisine: {truck.truckCuisine}</h3>
+                            <img src={Cajunfoodtruck} alt={'Feature truck'} id='detailsPic' />
+                            <div class='details'>
+
+                                <h3 id='truckHead'>Menu: {truck.truckMenu}</h3>
+                                <h3 id='truckHead'>Schedule: {truck.truckSchedule}</h3>
+                                <h3 id='truckHead'>Cuisine: {truck.truckCuisine}</h3>
+
+                            </div>
+                            <br></br>
+                            <br></br>
+                            <br></br>
                             <br></br>
                         </div>
 
