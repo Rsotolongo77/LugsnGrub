@@ -72,15 +72,15 @@ class Nav extends Component {
                 Register
               </Link>
             </li>
-            {/* <li className="nav-item">
+            <li className="nav-item">
               <Link
                 onClick={this.toggleNav}
                 className={window.location.pathname === "/saved" ? "nav-link active" : "nav-link"}
-                to="/saved"
+                to="/truckmgt"
               >
-                Saved
+                Manage Trucks
               </Link>
-          </li> */}
+          </li>
 
           </ul>
           <AuthButton />
