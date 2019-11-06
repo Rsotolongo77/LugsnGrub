@@ -3,14 +3,19 @@ import {
   // BrowserRouter as Router,
   // Route,
   Link,
-  // Redirect,
+  Redirect,
   // Switch,
   // withRouter
 } from 'react-router-dom';
 
 
+
 function Form(props) {
+
+
   return (
+
+
     <form>
       <div className="form-group">
         <label htmlFor="Query">
@@ -86,14 +91,15 @@ function Form(props) {
           onClick={props.handleFormSubmit}
           type="submit"
           className="btn btn-lg btn-danger float-right"
-
         >
+          {/* <Redirect to="/truckmgt" /> */}
           Submit
         </button>
       </div>
       <Link to="/truckmgt">Truck Mgt</Link>
-    </form>
+    </form >
   );
 }
 
 export default Form;
+

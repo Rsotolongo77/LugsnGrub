@@ -26,6 +26,9 @@
 #detailsPic {
     /* border: 1px solid rgb(101, 103, 197); */
     border-radius: 10px;
+    height: 270px;
+    width: 470px;
+    margin-top: 2.5%;
 }
 
 #header {
@@ -73,5 +76,15 @@
     display: inline-block;
     width: 250px;
     border: 1px solid grey;
+}
+
+#createBtn {
+    float: right;
+    background: rgba(241, 230, 76, 0.842);
+    width: 75px;
+    border-radius: 10px;
+    border: 1px solid grey;
+    margin-top: 5%;
+    margin-right: 2%;
 }
 
