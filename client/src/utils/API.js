@@ -6,6 +6,10 @@ export default {
         console.log(username)
         return axios.get("/api/trucks/" + username);
     },
+    getTruck: function (id) {
+        console.log("API", id)
+        return axios.get("/api/trucks/truck/" + id);
+    },
     // Gets the book with the given id
     updateTruck: function (id) {
         return axios.put("/api/owners" + id);

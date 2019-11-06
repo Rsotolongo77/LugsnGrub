@@ -17,8 +17,10 @@ import PublicRoute from "./pages/PublicRoute";
 import Footer from './components/Footer';
 import users from './components/users';
 import TruckForm from './components/TruckForm';
-import TruckMgt from './components/TruckMgt';
+import { TruckMgt } from './components/TruckMgt';
+import UpdateForm from './components/UpdateForm';
 import './App.css';
+
 
 //I want to add some basic inline styling here, even though we are bringing in styles
 // const listStyle = {
@@ -52,6 +54,7 @@ class App extends React.Component {
 							<PrivateRoute exact path="/users" component={users} />
 							<PrivateRoute exact path="/truckmgt" component={TruckMgt} />
 							<PrivateRoute exact path="/truckform" component={TruckForm} />
+							<PrivateRoute exact path="/updateform" component={UpdateForm} />
 
 							{/* <Route component={NoMatch} /> */}
 						</Switch>

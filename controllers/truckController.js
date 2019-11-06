@@ -19,6 +19,16 @@ module.exports = {
             })
             .catch(err => res.status(422).json(err));
     },
+    findTruckById: function (req, res) {
+        console.log(req.params.id)
+        db.Truck
+            .find({ _id: req.params.id })
+            .then(data => {
+                console.log(data)
+                res.json(data)
+            })
+            .catch(err => res.status(422).json(err));
+    },
     create: function (req, res) {
         db.Truck
             .create(req.body)

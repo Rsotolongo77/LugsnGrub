@@ -3,7 +3,7 @@ import {
   // BrowserRouter as Router,
   // Route,
   Link,
-  Redirect,
+  // Redirect,
   // Switch,
   // withRouter
 } from 'react-router-dom';
@@ -96,7 +96,6 @@ function Form(props) {
           Submit
         </button>
       </div>
-      <Link to="/truckmgt">Truck Mgt</Link>
     </form >
   );
 }
