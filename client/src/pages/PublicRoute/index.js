@@ -49,38 +49,38 @@ class PublicRoute extends Component {
                     </Col>
                 </Row>
 
-                <Row>
+                <Row id='homeRow'>
                     <div id="leftCol">
-                        <Col size="md-6 sm-12">
+                        <Col size="lg-6 sm-12">
                             <div className="imgCont">
-                                <img src={placeHolder1} alt={'Feature truck'} />
+                                <img src={placeHolder1} alt={'Feature truck'} id='truckImgHome' />
                                 <p className='featuredDisc'>Happy Beginning</p>
                             </div>
                         </Col>
                     </div>
                     <div id='rightCol'>
-                        <Col size="md-6 sm-12">
+                        <Col size="lg-6 sm-12">
                             <div className="imgCont">
-                                <img src={placeHolder2} alt={'Feature truck'} />
+                                <img src={placeHolder2} alt={'Feature truck'} id='truckImgHome' />
                                 <p className='featuredDisc'>Hotdog Heaven</p>
                             </div>
                         </Col>
                     </div>
                 </Row>
 
-                <Row>
+                <Row id='homeRow'>
                     <div id='leftCol'>
-                        <Col size="md-6 sm-12" id="rightCol">
+                        <Col size="lg-6 sm-12" id="rightCol">
                             <div className="imgCont">
-                                <img src={placeHolder3} alt={'Feature truck'} />
+                                <img src={placeHolder3} alt={'Feature truck'} id='truckImgHome' />
                                 <p className='featuredDisc'>Zatachitos</p>
                             </div>
                         </Col>
                     </div>
                     <div id='rightCol'>
-                        <Col size="md-6 sm-12" id="rightCol">
+                        <Col size="lg-6 sm-12" id="rightCol">
                             <div className="imgCont">
-                                <img src={placeHolder4} alt={'Feature truck'} />
+                                <img src={placeHolder4} alt={'Feature truck'} id='truckImgHome' />
                                 <p className='featuredDisc'>England Visits</p>
                             </div>
                         </Col>

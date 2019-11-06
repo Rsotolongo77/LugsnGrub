@@ -39,9 +39,17 @@ class TruckMgt extends React.Component {
                 <div id='contDiv'>
 
                     <h1 id='header'>Truck Management Page</h1>
+                    <Link id='createBtn'
+                        onClick={this.toggleNav}
+                        className={window.location.pathname === "/saved" ? "nav-link active" : "nav-link"}
+                        to="/truckform"
+                    >
+                        Create Truck
+                                </Link>
                     <hr id='line'></hr>
                     {this.state.user.map(truck => (
                         <div>
+
                             <br></br>
                             <br></br>
                             <h2 id='truckHeadMain'>Truck Name: {truck.truckName}</h2>

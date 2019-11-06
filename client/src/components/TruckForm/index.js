@@ -49,10 +49,17 @@ class TruckForm extends React.Component {
             .then(res => {
                 console.log(res)
                 // window.location = "/truckmgt";
-                return < Redirect to='/truckmgt' />
+                // return < Redirect to='/truckmgt' />
+                this.routeChange()
             })
             .catch(err => console.log(err));
     }
+
+    routeChange() {
+        let path = "/truckmgt";
+        this.props.history.push(path);
+    }
+
 
     render() {
         return (
@@ -78,6 +85,7 @@ class TruckForm extends React.Component {
                                     truckSchedule={this.state.truckSchedule}
                                     truckQuisine={this.state.truckQuisine}
                                 />
+
                             </div>
                         </Col>
                     </Row>
