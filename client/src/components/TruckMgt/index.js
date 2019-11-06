@@ -1,10 +1,11 @@
 import React from 'react';
-import { Col, Row, Container } from "../../components/Grid";
+import { Container } from "../../components/Grid";
 import API from "../../utils/API"
 import './style.css';
 import { usernameTransfer } from "../../components/Login";
 import Cajunfoodtruck from "../TruckImages/Cajun foodtruck.jpg";
 import './style.css';
+import { Link } from 'react-router-dom';
 
 
 class TruckMgt extends React.Component {
@@ -50,6 +51,20 @@ class TruckMgt extends React.Component {
                                 <h3 id='truckHead'>Menu: {truck.truckMenu}</h3>
                                 <h3 id='truckHead'>Schedule: {truck.truckSchedule}</h3>
                                 <h3 id='truckHead'>Cuisine: {truck.truckCuisine}</h3>
+                                <Link id='updateBtn'
+                                    onClick={this.toggleNav}
+                                    className={window.location.pathname === "/saved" ? "nav-link active" : "nav-link"}
+                                    to="/truckform"
+                                >
+                                    Update Truck
+                                </Link>
+                                <Link id='deleteBtn'
+                                    onClick={this.toggleNav}
+                                    className={window.location.pathname === "/saved" ? "nav-link active" : "nav-link"}
+                                    to="/truckform"
+                                >
+                                    Delete Truck
+                                </Link>
 
                             </div>
                             <br></br>

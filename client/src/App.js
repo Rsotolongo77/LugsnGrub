@@ -46,6 +46,7 @@ class App extends React.Component {
 							<Route exact path="/" component={PublicRoute} />
 							<Route exact path="/login" component={Login} />
 							<Route exact path="/login" component={AuthButton} />
+							{/* <Route exact path="/login" component={truckButton} /> */}
 							<Route exact path="/register" component={Register} />
 							<PrivateRoute exact path="/protected" component={users} />
 							<PrivateRoute exact path="/users" component={users} />
@@ -76,6 +77,20 @@ const AuthButton = withRouter(({ history }) => (
 			<span></span>
 		)
 ))
+
+// const truckButton = withRouter(({ history }) => (
+// 	Auth.isAuthenticated ? (
+// 	  <button className="btn btn-danger"
+// 		onClick={() => {
+// 		  history.push('/truckmgt')
+// 		}}>
+// 		Manage Trucks
+// 			  </button>
+// 	) : (
+// 		<span></span>
+// 	  )
+//   ))
+
 
 // This is the private route component this checks for an authorized user here
 const PrivateRoute = ({ component: Component, ...rest }) => (

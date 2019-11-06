@@ -1,6 +1,8 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
-import { AuthButton } from "../../App"
+import { AuthButton } from "../../App";
+
+
 
 import "./style.css";
 // import Login from "../LoginForm";
@@ -33,8 +35,12 @@ class Nav extends Component {
     window.removeEventListener("resize", this.updateWidth);
   }
 
+
+
   render() {
     return (
+
+
       <nav className="navbar navbar-expand-lg navbar-dark mb-2">
         <Link className="navbar-brand" to="/">
           Home
@@ -80,9 +86,10 @@ class Nav extends Component {
               >
                 Manage Trucks
               </Link>
-          </li>
+            </li>
 
           </ul>
+          {/* <truckButton /> */}
           <AuthButton />
         </div>
 
