@@ -12,8 +12,9 @@ import Form from '../Form';
 import { Col, Row, Container } from "../../components/Grid";
 import './style.css';
 import API from "../../utils/API"
-import { usernameTransfer } from "../../components/Login";
+// import { usernameTransfer } from "../../components/Login";
 import { truckId } from "../TruckMgt"
+import truckPlaceHolder from "../TruckImages/fishnchips foodtruck.jpg"
 
 
 
@@ -58,6 +59,7 @@ class TruckForm extends React.Component {
 
 
     }
+
     handleInputChange = event => {
         const { name, value } = event.target;
         this.setState({
@@ -67,8 +69,7 @@ class TruckForm extends React.Component {
 
     handleFormSubmit = event => {
         event.preventDefault();
-        API.submitTruck({
-            username: usernameTransfer,
+        API.updateTruck({
             truckName: this.state.truckName,
             truckPic: this.state.truckPic,
             truckMenu: this.state.truckMenu,
@@ -76,6 +77,7 @@ class TruckForm extends React.Component {
             truckCuisine: this.state.truckCuisine
 
         })
+
             .then(res => {
                 console.log(res)
                 // window.location = "/truckmgt";
@@ -96,13 +98,12 @@ class TruckForm extends React.Component {
             <Container fluid >
                 <br></br>
                 <br></br>
-                <h1>Update Truck</h1>
 
                 <div className='truckLanding'>
+
                     <Row>
-                        {/* <Link to="/truckmgt">Truck Management</Link> */}
                         <Col size="md-6 sm-12">
-                            <img src="" alt={'Truck Mgt'} id='truckPlaceHolder' />
+                            <img src={truckPlaceHolder} alt={'Truck Mgt'} id='truckPlaceHolder' />
                         </Col>
                         <Col size="md-6 sm-12">
                             <div className='truckDetails'>

@@ -43,12 +43,7 @@ module.exports = {
                 res.json(err);
             });
     },
-    // create: function (req, res) {
-    //     db.Truck
-    //         .create(req.body)
-    //         .then(data => res.json(data))
-    //         .catch(err => res.status(422).json(err));
-    // },
+
     update: function (req, res) {
         db.Truck
             .findOneAndUpdate({ _id: req.params.id }, req.body)

@@ -6,7 +6,8 @@ const truckController = require("../../controllers/truckController");
 //     .get(truckController.findAll);
 
 // Matches with "/api/users
-router.route("/owners")
+router
+    .route("/owners")
     .get(truckController.findAll)
     .post(truckController.create);
 

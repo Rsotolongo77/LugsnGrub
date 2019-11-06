@@ -82,9 +82,15 @@
     float: right;
     background: rgba(241, 230, 76, 0.842);
     width: 75px;
+    height: 65px;
     border-radius: 10px;
     border: 1px solid grey;
-    margin-top: 5%;
-    margin-right: 2%;
+    margin-top: 5.5%;
+    margin-right: 5%;
+    margin-left: 0;
+}
+
+#truckPlaceHolder {
+    margin-left: 10%;
 }
 
