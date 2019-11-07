@@ -69,13 +69,12 @@ class TruckForm extends React.Component {
 
     handleFormSubmit = event => {
         event.preventDefault();
-        API.updateTruck({
+        API.updateTruck(truckId, {
             truckName: this.state.truckName,
             truckPic: this.state.truckPic,
             truckMenu: this.state.truckMenu,
             truckSchedule: this.state.truckSchedule,
             truckCuisine: this.state.truckCuisine
-
         })
 
             .then(res => {

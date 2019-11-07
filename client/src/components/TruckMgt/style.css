@@ -80,12 +80,12 @@
 
 #createBtn {
     float: right;
-    background: rgba(241, 230, 76, 0.842);
+    background-color: white;
     width: 75px;
     border-radius: 10px;
-    border: 1px solid grey;
-    margin-top: 5%;
-    margin-right: 2%;
+    border: 3px solid grey;
+    margin-top: 5.5%;
+    margin-right: 3%;
 }
 
 #truckPlaceHolder {
