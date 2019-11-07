@@ -65,6 +65,7 @@
 #updateBtn {
     background-color:rgba(241, 230, 76, 0.842);
     width: 250px;
+    margin-bottom: 1.3%;
     justify-content: center;
     display: inline-block;
     border: 1px solid grey;
