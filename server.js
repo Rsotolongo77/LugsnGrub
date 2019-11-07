@@ -9,6 +9,7 @@ const passport = require('passport');
 const LocalStrategy = require('passport-local').Strategy;
 const flash = require('connect-flash');
 const routes = require('./routes/index');
+const fileUpload = require("express-fileupload");
 /* === Set the PORT to work with deployment environment === */
 const PORT = process.env.PORT || 3001;
 /* === Call Express as app === */
@@ -77,6 +78,20 @@ app.use(function (err, req, res, next) {
     error: {}
   });
 });
+
+app.use(fileUpload())
+
+app.post("/upload", (req, res) => {
+  if (req.files === null) {
+    return res.status(400).json({ msg: "No File Uploaded" })
+  }
+  const file = req.files.filefile.mv(`${__dirname}/client/public/uploads/${file.name}`, err => {
+    if (err); {
+      return res.status(500).send(err);
+    }
+    res.json({ fileName: file.name, filePath: `/uploads/${file.name}` });
+  });
+})
 
 
 /* === Telling Express to Listen === */

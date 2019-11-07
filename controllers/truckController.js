@@ -9,6 +9,16 @@ module.exports = {
             .then(data => res.json(data))
             .catch(err => res.status(422).json(err));
     },
+    findByCategory: function (req, res) {
+        console.log("back end")
+        db.Truck
+            .find({ truckCuisine: req.params.category })
+            .then(data => {
+                console.log(data)
+                res.json(data)
+            })
+            .catch(err => res.status(422).json(err));
+    },
     findById: function (req, res) {
         db.Account
             .find({ username: req.params.username })

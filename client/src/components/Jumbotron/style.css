@@ -1,9 +1,13 @@
 .jumbotron {
+    justify-content: center;
+    display: inline-block;
     background-color: white;
     color: teal;
     border-radius: 20px;
     padding-right: 100px;
     padding-left: 100px;
+    margin-left: 26%;
+    width: 1000px;
 }
 
 h1 {

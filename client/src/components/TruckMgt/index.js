@@ -44,20 +44,30 @@ class TruckMgt extends React.Component {
         this.props.history.push(path);
     }
 
+    deleteTruck = id => {
+        API.deleteTruck(id)
+            .then(res => this.getTrucks())
+            .catch(err => console.log(err));
+    };
 
     render() {
         return (
+
             <Container fluid >
 
                 <div id='contDiv'>
 
                     <h1 id='header'>Truck Management Page</h1>
-                    <Link id='createBtn' to="/truckform"
+                    <Link id='createBtn' to="/users"
                     >
                         Create Truck
                                 </Link>
+
+
                     <hr id='line'></hr>
                     {this.state.user.map((truck, i) => (
+
+
 
                         < div key={i} >
                             <br></br>
@@ -76,11 +86,23 @@ class TruckMgt extends React.Component {
                                     Update Truck
                                 </Link>
                                 <Link id='deleteBtn'
-                                    onClick={() => this.getId(truck._id)}
-                                    to="/deleteform"
+                                    onClick={() => this.deleteTruck(truck._id)}
+                                    to="/truckmgt"
                                 >
                                     Delete Truck
                                 </Link>
+
+
+                                {/* 
+                                </Link>
+                    <DeleteBtn onClick={() => this.deleteBook(book._id)} />
+                  </ListItem> */}
+
+
+
+
+
+
 
                             </div>
                             <br></br>
