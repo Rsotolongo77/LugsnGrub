@@ -10,18 +10,40 @@ export default {
         console.log("API", id)
         return axios.get("/api/trucks/truck/" + id);
     },
+
+
+
+
+
+
+
+
     // Gets the book with the given id
-    updateTruck: function (updateTruck) {
-        return axios.put("/api/trucks/truck/" + updateTruck.truckName);
+    updateTruck: function (id, updateTruck) {
+
+        return axios.put("/api/trucks/truck/" + id, updateTruck);
     },
+
+    // Saves a book to the database
+    submitTruck: function (createTruck) {
+        console.log("Create Truck:", createTruck);
+        return axios.post("/api/trucks/" + createTruck.username, createTruck);
+    },
+
+
+
+
+
+
+
+
+
+
+
+
+
     // Deletes the book with the given id
     deleteTruck: function (id) {
         return axios.delete("/api/trucks/truck" + id);
     },
-    // Saves a book to the database
-    submitTruck: function (createTruck) {
-        console.log("Create Truck:", createTruck);
-
-        return axios.post("/api/trucks/" + createTruck.username, createTruck);
-    }
 }; 

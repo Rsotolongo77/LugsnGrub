@@ -1,11 +1,11 @@
 import React from 'react';
 import { Container } from "../../components/Grid";
 import API from "../../utils/API"
-import './style.css';
 import { usernameTransfer } from "../../components/Login";
 import Cajunfoodtruck from "../TruckImages/Cajun foodtruck.jpg";
-import './style.css';
 import { Link } from 'react-router-dom';
+import './style.css';
+
 
 let truckId;
 
@@ -52,10 +52,7 @@ class TruckMgt extends React.Component {
                 <div id='contDiv'>
 
                     <h1 id='header'>Truck Management Page</h1>
-                    <Link id='createBtn'
-                        onClick={this.toggleNav}
-                        className={window.location.pathname === "/saved" ? "nav-link active" : "nav-link"}
-                        to="/truckform"
+                    <Link id='createBtn' to="/truckform"
                     >
                         Create Truck
                                 </Link>
@@ -79,9 +76,8 @@ class TruckMgt extends React.Component {
                                     Update Truck
                                 </Link>
                                 <Link id='deleteBtn'
-                                    onClick={this.toggleNav}
-                                    className={window.location.pathname === "/saved" ? "nav-link active" : "nav-link"}
-                                    to="/truckform"
+                                    onClick={() => this.getId(truck._id)}
+                                    to="/deleteform"
                                 >
                                     Delete Truck
                                 </Link>

@@ -17,13 +17,14 @@ body {
     padding: 0px;
     text-align: center;
     overflow-x: hidden;
-    /* background-color: rgb(3, 184, 169); */
+    background-color: rgb(3, 184, 169);
     /* The image used */
-  background-image: url("./components/TruckImages/FoodTruckFestival.jpg");
+    /* background-image: url("./components/TruckImages/FoodTruckFestival.jpg"); */
     justify-content: center;
     display: inline-block;
     margin-right: auto;
     margin-left: auto;
+    position: relative;
 }
 
 .Container {
@@ -47,7 +48,7 @@ body {
   margin-bottom: 3%;
   padding-top: 10px;
   height: 60px;
-  width: 80%;
+  width: 90%;
   justify-content: center;
   display: inline-block;
   margin-right: auto;
@@ -55,8 +56,8 @@ body {
 }
 
 #truckImgHome {
-  height: 270px;
-  width: 470px;
+  height: 350px;
+  width: 530px;
   margin-top: 2.5%;
 }
 
@@ -74,23 +75,23 @@ body {
 }
 
 img {
-  height: 430px;
-  width: 550px;
+  height: 460px;
+  width: 600px;
   margin-top: 1%;
 }
 
 .imgCont {
   background-color: white;
-  height: 400px;
-  width: 500px;
+  height: 450px;
+  width: 570px;
   border-radius: 10px;
-  margin-bottom: 7%;
+  margin-bottom: 12%;
   justify-content: center;
   display: inline-block;
 }
 
 #leftCol {
-  margin-left: 175px;
+  margin-left: 105px;
 }
 
 .featuredDisc {
@@ -163,4 +164,9 @@ img {
     margin-bottom: 5%;
     padding-top: 7%;
  }
-  
+
+ #dropDownCont {
+    background-image: url("");
+ }
+
+ 
