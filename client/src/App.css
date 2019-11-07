@@ -166,7 +166,50 @@ img {
  }
 
  #dropDownCont {
-    background-image: url("");
+    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, #b44a7f 35%, rgb(8, 8, 8) 100%);
+    border: 3px solid black;
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+    padding-top: 1%;
+    padding-left: 10%;
+    padding-right: 10%;
+    width: 72.5%;
+    height: 80px;
+    justify-content: center;
+    display: inline-block;
  }
 
+ #bluredImgHome {
+    width: 1100px;
+    height:500px;
+ }
  
+ #vibes {
+    background-color: black;
+    width: 1000px;
+    height:400px;
+    justify-content: center;
+    display: inline-block;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+ }
+ 
+ #glow {
+  font-size: 100px;
+  font-family: 'futura';
+  padding-top: 13%;
+  color: #fff;
+  text-align: center;
+  -webkit-animation: glow 1s ease-in-out infinite alternate;
+  -moz-animation: glow 1s ease-in-out infinite alternate;
+  animation: glow 1s ease-in-out infinite alternate;
+}
+
+@-webkit-keyframes glow {
+  from {
+    text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  }
+  to {
+    text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
+  }
+}
