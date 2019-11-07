@@ -2,6 +2,10 @@ import axios from "axios";
 
 export default {
     // Gets all trucks
+    getTrucksByCategory: function (category) {
+        console.log(category)
+        return axios.get("/api/trucks/all/" + category);
+    },
     getTrucks: function (username) {
         console.log(username)
         return axios.get("/api/trucks/" + username);
@@ -10,13 +14,6 @@ export default {
         console.log("API", id)
         return axios.get("/api/trucks/truck/" + id);
     },
-
-
-
-
-
-
-
 
     // Gets the book with the given id
     updateTruck: function (id, updateTruck) {
@@ -30,20 +27,9 @@ export default {
         return axios.post("/api/trucks/" + createTruck.username, createTruck);
     },
 
-
-
-
-
-
-
-
-
-
-
-
-
     // Deletes the book with the given id
     deleteTruck: function (id) {
-        return axios.delete("/api/trucks/truck" + id);
+        console.log("Made it here.");
+        return axios.delete("/api/trucks/truck/" + id);
     },
 }; 

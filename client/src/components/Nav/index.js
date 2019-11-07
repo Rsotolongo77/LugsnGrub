@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import { AuthButton } from "../../App";
-
+import { usernameTransfer } from "../Login";
 
 
 import "./style.css";
@@ -78,7 +78,7 @@ class Nav extends Component {
                 Register
               </Link>
             </li>
-            <li className="nav-item">
+            {usernameTransfer ? <li className="nav-item">
               <Link
                 onClick={this.toggleNav}
                 className={window.location.pathname === "/saved" ? "nav-link active" : "nav-link"}
@@ -86,8 +86,8 @@ class Nav extends Component {
               >
                 Manage Trucks
               </Link>
-            </li>
-
+            </li> : <li className="nav-item">
+              </li>}
           </ul>
           {/* <truckButton /> */}
           <AuthButton />
