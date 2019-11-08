@@ -17,14 +17,15 @@ body {
     padding: 0px;
     text-align: center;
     overflow-x: hidden;
-    background-color: rgb(3, 184, 169);
+    /* background-color: rgb(3, 184, 169); */
     /* The image used */
-    /* background-image: url("./pages/PublicRoute/placeHolder6.jpg"); */
+    background-image: url("./pages/PublicRoute/placeHolder3.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
     justify-content: center;
     display: inline-block;
     margin-right: auto;
     margin-left: auto;
-    position: relative;
 }
 
 .Container {
@@ -38,8 +39,8 @@ body {
 }
 
 .featured {
-  background-color: rgba(0, 0, 0, 0.288);
-  color: rgb(226, 226, 226);
+  background-color: rgba(187, 186, 186, 0.63);
+  color: black;
   font-size: 30px;
   font-weight: 800;
   font-family: 'Orbitron', sans-serif;
@@ -61,6 +62,12 @@ body {
   margin-top: 2.5%;
 }
 
+#truckImgHome2 {
+  height: 500px;
+  width: 800px;
+  margin-top: 2.5%;
+}
+
 #truckMgtHome {
   height: 270px;
   width: 470px;
@@ -72,6 +79,10 @@ body {
   display: inline-block;
   margin-right: auto;
   margin-left: auto;
+}
+
+#homeRow1 {
+  padding-right: 10%;
 }
 
 img {
@@ -90,8 +101,22 @@ img {
   display: inline-block;
 }
 
+.imgCont2 {
+  background-color: white;
+  height: 650px;
+  width: 870px;
+  font-size: 60px;
+  border-radius: 10px;
+  margin-bottom: 12%;
+  justify-content: center;
+  display: inline-block;
+}
 #leftCol {
   margin-left: 105px;
+}
+
+#leftCol2 {
+  margin-right: 10px;
 }
 
 .featuredDisc {
@@ -126,8 +151,8 @@ img {
   }
 
   .loginForm {
-    background-color: rgba(0, 0, 0, 0.322);
-    color: white;
+    background-color: rgba(224, 224, 224, 0.575);
+    color: rgb(0, 87, 128);
     justify-content: center;
     display: inline-block;
     width: 850px;
@@ -145,8 +170,9 @@ img {
   }
 
  #registerCont {
-    background-color: rgba(0, 0, 0, 0.322);
-    color: white;
+    background-color: rgba(224, 224, 224, 0.575);
+    color: rgb(0, 87, 128);
+    font-family: 'Signika Negative', sans-serif;
     justify-content: center;
     display: inline-block;
     width: 900px;
@@ -166,18 +192,28 @@ img {
  }
 
  #dropDownCont {
-    background: linear-gradient(90deg, rgba(0,0,0,1) 0%, #b44a7f 35%, rgb(8, 8, 8) 100%);
+    background: linear-gradient(90deg, rgba(0, 0, 0, 0.575) 0%, #b44a7f9c 35%, rgba(8, 8, 8, 0.575) 100%);
     border: 3px solid black;
     border-bottom-left-radius: 10px;
     border-bottom-right-radius: 10px;
     padding-top: 1%;
-    padding-left: 10%;
+    padding-left: 12%;
     padding-right: 10%;
+    margin-right: 2%;
     width: 72.5%;
     height: 80px;
     justify-content: center;
     display: inline-block;
  }
+
+ #cuisineBtn {
+    background-color: rgb(110, 109, 109);
+    color: white;
+ }
+
+ #cuisineBtn:hover {
+    cursor: pointer;
+}
 
  #bluredImgHome {
     width: 1100px;
@@ -185,19 +221,20 @@ img {
  }
  
  #vibes {
-    background-color: black;
-    width: 1000px;
-    height:400px;
+    /* background-color: rgba(49, 49, 49, 0.651); */
+    width: 1300px;
+    height:250px;
     justify-content: center;
     display: inline-block;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
+    border-radius: 10px;
+    margin-right: auto;
+    margin-left: auto;
  }
  
  #glow {
-  font-size: 100px;
+  font-size: 115px;
   font-family: 'futura';
-  padding-top: 13%;
+  padding-top: 5%;
   color: #fff;
   text-align: center;
   -webkit-animation: glow 1s ease-in-out infinite alternate;

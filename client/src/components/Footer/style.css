@@ -2,3 +2,14 @@
     font-family: 'Signika Negative', sans-serif;
     font-size: 30px;
 }
+
+.footer, Footer {
+    left: 0;
+    bottom: 0;
+    margin:0;
+    width: 100%;
+    color: lightgray;
+    font-size: small;
+    padding-top: .8%;
+    
+  }

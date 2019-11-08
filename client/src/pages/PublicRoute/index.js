@@ -7,8 +7,8 @@ import placeHolder3 from './placeHolder3.jpg';
 import placeHolder4 from './placeHolder4.jpg';
 import placeHolder5 from './placeHolder5.jpg';
 import placeHolder6 from './placeHolder6.jpg';
-import placeHolder7 from './placeHolder7.jpg';
-import dropDownImg from './dropDown.jpg';
+// import placeHolder7 from './placeHolder7.jpg';
+// import dropDownImg from './dropDown.jpg';
 import API from "../../utils/API"
 
 /*ToDo*/
@@ -60,25 +60,7 @@ class PublicRoute extends Component {
                 <br></br>
                 <div id='bluredCont'>
                     <div id='vibes'>
-                        <h2 id='glow'>Good Vibes Only</h2>
-                    </div>
-                    {/* <img src={dropDownImg} alt={'Feature truck'} id='bluredImgHome' /> */}
-
-                    <div id='dropDownCont'>
-
-                        <div className="input-group mb-3" id='dropDown'>
-                            <select value={this.state.cuisine} className="custom-select" id="inputGroupSelect02" onChange={this.handleChange}>
-                                <option>Choose Food Cuisine</option>
-                                <option value="Cajun">Cajun</option>
-                                <option value="Tacos">Tacos</option>
-                                <option value="Hot Dogs">Hot Dogs</option>
-                                <option value="Seafood">Seafood</option>
-                                <option value="Chinese">Chinese</option>
-                            </select>
-                            <div className="input-group-append" onClick={this.submitForm}>
-                                <label class="input-group-text" for="inputGroupSelect02">Submit</label>
-                            </div>
-                        </div>
+                        <h2 id='glow'>Lugs N' Grub</h2>
                     </div>
                 </div>
                 <br></br>
@@ -88,28 +70,45 @@ class PublicRoute extends Component {
                     <Col size="md-6 sm-12">
                         <Jumbotron>
                             <h1><b>Welcome to Lugs N' Grub!</b></h1>
-                            <h4>Let's face it, lunch trucks now-days are an incredibly great thing. We simply aim to connect you with this greatness. So whether
+                            <h4>Let's face it, food trucks now-days are an incredibly great thing. We simply aim to connect you with this greatness. So whether
                             you want to checkout the featured trucks below, or you want to find where your next delicious meal will be, we are here to help!</h4>
                         </Jumbotron>
                     </Col>
                 </Row>
-                <br></br>
+                <div id='dropDownCont'>
 
-                <br></br>
-
-                <Row>
-                    {this.state.results.map(item => (
-                        <div id="leftCol">
-                            <Col size="lg-6 sm-12">
-                                <div className="imgCont">
-                                    <img src={placeHolder1} alt={'Feature truck'} id='truckImgHome' />
-                                    <p className='featuredDisc'>{item.truckName}</p>
-                                </div>
-                            </Col>
+                    <div className="input-group mb-3" id='dropDown'>
+                        <select value={this.state.cuisine} className="custom-select" id="inputGroupSelect02" onChange={this.handleChange}>
+                            <option>Choose Food Cuisine</option>
+                            <option value="Cajun">Cajun</option>
+                            <option value="Tacos">Tacos</option>
+                            <option value="Hot Dogs">Hot Dogs</option>
+                            <option value="Seafood">Seafood</option>
+                            <option value="Chinese">Chinese</option>
+                        </select>
+                        <div className="input-group-append" onClick={this.submitForm}>
+                            <label class="input-group-text" for="inputGroupSelect02" id='cuisineBtn'>Submit</label>
                         </div>
+                    </div>
+                </div>
+                <br></br>
 
-                    ))}
-                </Row>
+                <br></br>
+
+
+                {/* <Row id='homeRow1'> */}
+                {this.state.results.map(item => (
+                    <div id="leftCol2">
+                        <Col size="lg-12 sm-12">
+                            <div className="imgCont2">
+                                <img src={placeHolder1} alt={'Feature truck'} id='truckImgHome2' />
+                                <p className='featuredDisc'>{item.truckName}</p>
+                            </div>
+                        </Col>
+                    </div>
+
+                ))}
+                {/* </Row> */}
 
 
 

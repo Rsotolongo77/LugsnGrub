@@ -1,10 +1,10 @@
 .ownerLanding {
-    background-color: white;
+    background-color: rgba(224, 224, 224, 0.801);
+    color: rgb(0, 87, 128);
     height: 1000px;
     width: 900px;
     justify-content: center;
     border-radius: 20px;
-    color: teal;
     margin: auto;
     padding-top: 100px;
 }
@@ -43,7 +43,7 @@
     width: 600px;
     padding: 20px;
     margin: auto;
-    background: #ff0000c0;
+    background: #dd2d2dd3;
     color: #fff;
     font-size: 21px;
     font-weight: bold;

@@ -46,7 +46,7 @@ class Login extends React.Component {
 
 		return (
 			<div className='loginForm'>
-				<h3>User Login</h3>
+				<h1>User Login</h1>
 				{/* <p>You must log in to view the page {from.pathname}</p> */}
 				<LoginForm onLogin={this.login} />
 			</div>

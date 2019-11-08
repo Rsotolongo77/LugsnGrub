@@ -46,7 +46,7 @@ class Register extends React.Component {
             <div id='registerCont'>
                 <br></br>
                 <br></br>
-                <h2>Register Wheels</h2>
+                <h1>Register Wheels</h1>
                 <RegisterForm onRegister={this.register} />
             </div>
         )

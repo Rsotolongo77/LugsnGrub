@@ -1,7 +1,7 @@
 #contDiv{
-    background-color: white;
+    background-color: rgba(224, 224, 224, 0.801);
+    color: rgb(0, 87, 128);
     width: 70%;
-    color: teal;
     border-radius: 30px;
     margin-top: 3%;
     justify-content: center;
@@ -40,7 +40,7 @@
 #truckHeadMain {
     margin: 0;
     font-family: courier, monospace;
-    color: teal;
+    color: rgb(0, 87, 128);
     padding-top: 1%;
     font-size: 40px;
     /* text-shadow: .1em .1em .2em rgba(0, 0, 0, 0.6); */
@@ -81,7 +81,7 @@
 
 #createBtn {
     float: right;
-    background-color: white;
+    background-color: rgb(150, 147, 147);
     width: 75px;
     border-radius: 10px;
     border: 3px solid grey;
@@ -90,6 +90,8 @@
 }
 
 #truckPlaceHolder {
-    margin-left: 10%;
+    float: left;
+    margin-top: 10%;
+    margin-left: 2%;
 }
 
