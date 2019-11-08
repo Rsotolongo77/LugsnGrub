@@ -90,6 +90,7 @@ class Nav extends Component {
               </li>}
           </ul>
           {/* <truckButton /> */}
+          {/* {usernameTransfer ? <span>{usernameTransfer}</span> : <span></span>} */}
           <AuthButton />
         </div>
 

@@ -77,7 +77,8 @@ passport.serializeUser(Account.serializeUser());
 passport.deserializeUser(Account.deserializeUser());
 
 /* === Mongoose Connection === */
-mongoose.connect('mongodb://localhost/LugsNGrub', { useNewUrlParser: true });
+// mongoose.connect(process.env.MONGODB_URI ||'mongodb://localhost/LugsNGrub', { useNewUrlParser: true });
+mongoose.connect(process.env.MONGODB_URI || 'mongodb://localhost/LugsNGrub');
 
 /* === Error Handling === */
 
