@@ -1,8 +1,8 @@
 .jumbotron {
     justify-content: center;
     display: inline-block;
-    background-color: white;
-    color: teal;
+    background-color: rgba(255, 255, 255, 0.719);
+    color: rgb(0, 87, 128);
     border-radius: 20px;
     padding-right: 100px;
     padding-left: 100px;
@@ -11,7 +11,7 @@
 }
 
 h1 {
-    font-size: 55px;
+    font-size: 45px;
     display: inline-block;
     text-align: center;
     font-family: 'Orbitron', sans-serif;

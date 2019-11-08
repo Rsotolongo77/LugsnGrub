@@ -37,6 +37,28 @@ if (process.env.NODE_ENV === "production") {
   app.use(passport.session()); app.use(express.static(path.join(__dirname, '../build')));
 };
 
+app.use(fileUpload())
+
+app.post("/upload", (req, res) => {
+  // console.log("UPLOAD", req.files)
+  if (req.files === null) {
+    return res.status(400).json({ msg: "No File Uploaded" })
+  }
+  const file = req.files.file
+  file.mv(`${__dirname}/client/public/uploads/${file.name}`, err => {
+    if (err) {
+      console.error(err);
+      return res.status(500).send(err);
+    }
+
+    res.json({ fileName: file.name, filePath: `/uploads/${file.name}` });
+  });
+
+})
+
+
+
+
 /* === Routing === */
 
 app.use(routes);
@@ -78,20 +100,6 @@ app.use(function (err, req, res, next) {
     error: {}
   });
 });
-
-app.use(fileUpload())
-
-app.post("/upload", (req, res) => {
-  if (req.files === null) {
-    return res.status(400).json({ msg: "No File Uploaded" })
-  }
-  const file = req.files.filefile.mv(`${__dirname}/client/public/uploads/${file.name}`, err => {
-    if (err); {
-      return res.status(500).send(err);
-    }
-    res.json({ fileName: file.name, filePath: `/uploads/${file.name}` });
-  });
-})
 
 
 /* === Telling Express to Listen === */

@@ -2,7 +2,7 @@ import React from 'react';
 import { Container } from "../../components/Grid";
 import API from "../../utils/API"
 import { usernameTransfer } from "../../components/Login";
-import Cajunfoodtruck from "../TruckImages/Cajun foodtruck.jpg";
+// import Cajunfoodtruck from "../TruckImages/Cajun foodtruck.jpg";
 import { Link } from 'react-router-dom';
 import './style.css';
 
@@ -73,7 +73,7 @@ class TruckMgt extends React.Component {
                             <br></br>
                             <br></br>
                             <h2 id='truckHeadMain'>Truck Name: {truck.truckName}</h2>
-                            <img src={Cajunfoodtruck} alt={'Feature truck'} id='detailsPic' />
+                            <img src={truck.truckPic} alt={'Feature truck'} id='detailsPic' />
                             <div className='details'>
 
                                 <h3 id='truckHead'>Menu: {truck.truckMenu}</h3>
