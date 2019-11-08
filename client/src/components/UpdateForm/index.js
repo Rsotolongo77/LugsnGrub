@@ -158,13 +158,13 @@ class TruckForm extends React.Component {
                                     handleInputChange={this.handleInputChange}
                                     handleFormSubmit={this.handleFormSubmit}
                                     handleImageSubmit={this.onSubmit}
-                                    id={this.state.truckName}
                                     truckName={this.state.truckName}
+                                    id={this.state.truckName}
                                     truckPic={this.state.filename}
                                     imageInput={this.state.image}
                                     truckMenu={this.state.truckMenu}
                                     truckSchedule={this.state.truckSchedule}
-                                    truckQuisine={this.state.truckQuisine}
+                                    truckCuisine={this.state.truckCuisine}
                                 />
 
                             </div>

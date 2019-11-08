@@ -81,7 +81,7 @@ class PublicRoute extends Component {
                         <select value={this.state.cuisine} className="custom-select" id="inputGroupSelect02" onChange={this.handleChange}>
                             <option>Choose Food Cuisine</option>
                             <option value="Cajun">Cajun</option>
-                            <option value="Tacos">Tacos</option>
+                            <option value="Mexican">Mexican</option>
                             <option value="Hot Dogs">Hot Dogs</option>
                             <option value="Seafood">Seafood</option>
                             <option value="Chinese">Chinese</option>
@@ -101,8 +101,11 @@ class PublicRoute extends Component {
                     <div id="leftCol2">
                         <Col size="lg-12 sm-12">
                             <div className="imgCont2">
-                                <img src={placeHolder1} alt={'Feature truck'} id='truckImgHome2' />
-                                <p className='featuredDisc'>{item.truckName}</p>
+                                <img src={item.truckPic} alt={'Feature truck'} id='truckImgHome2' />
+                                <p className='details'>Truck: {item.truckName}</p>
+                                <p className='details'>Menu: {item.truckMenu}</p>
+                                <p className='details'>Schedule: {item.truckSchedule}</p>
+
                             </div>
                         </Col>
                     </div>
@@ -125,7 +128,7 @@ class PublicRoute extends Component {
                         <Col size="lg-6 sm-12">
                             <div className="imgCont">
                                 <img src={placeHolder1} alt={'Feature truck'} id='truckImgHome' />
-                                <p className='featuredDisc'>Happy Beginning</p>
+                                <p className='details'>Happy Beginning</p>
                             </div>
                         </Col>
                     </div>
@@ -133,7 +136,7 @@ class PublicRoute extends Component {
                         <Col size="lg-6 sm-12">
                             <div className="imgCont">
                                 <img src={placeHolder2} alt={'Feature truck'} id='truckImgHome' />
-                                <p className='featuredDisc'>Hotdog Heaven</p>
+                                <p className='details'>Hotdog Heaven</p>
                             </div>
                         </Col>
                     </div>
@@ -144,7 +147,7 @@ class PublicRoute extends Component {
                         <Col size="lg-6 sm-12" id="rightCol">
                             <div className="imgCont">
                                 <img src={placeHolder3} alt={'Feature truck'} id='truckImgHome' />
-                                <p className='featuredDisc'>Zatachitos</p>
+                                <p className='details'>Zatachitos</p>
                             </div>
                         </Col>
                     </div>
@@ -152,7 +155,7 @@ class PublicRoute extends Component {
                         <Col size="lg-6 sm-12" id="rightCol">
                             <div className="imgCont">
                                 <img src={placeHolder4} alt={'Feature truck'} id='truckImgHome' />
-                                <p className='featuredDisc'>England Visits</p>
+                                <p className='details'>England Visits</p>
                             </div>
                         </Col>
                     </div>
@@ -162,7 +165,7 @@ class PublicRoute extends Component {
                         <Col size="lg-6 sm-12" id="rightCol">
                             <div className="imgCont">
                                 <img src={placeHolder5} alt={'Feature truck'} id='truckImgHome' />
-                                <p className='featuredDisc'>Doughnut Delights</p>
+                                <p className='details'>Doughnut Delights</p>
                             </div>
                         </Col>
                     </div>
@@ -170,7 +173,7 @@ class PublicRoute extends Component {
                         <Col size="lg-6 sm-12" id="rightCol">
                             <div className="imgCont">
                                 <img src={placeHolder6} alt={'Feature truck'} id='truckImgHome' />
-                                <p className='featuredDisc'>The Teal Tavern</p>
+                                <p className='details'>The Teal Tavern</p>
                             </div>
                         </Col>
                     </div>
