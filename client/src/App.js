@@ -22,11 +22,6 @@ import UpdateForm from './components/UpdateForm';
 import './App.css';
 
 
-//I want to add some basic inline styling here, even though we are bringing in styles
-// const listStyle = {
-// 	color: 'cornflowerblue',
-// 	listStyle: 'none'
-// };
 //Now we have all the stuff we need .. let's render some components with the Router
 class App extends React.Component {
 

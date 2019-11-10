@@ -91,19 +91,6 @@ class TruckMgt extends React.Component {
                                 >
                                     Delete Truck
                                 </Link>
-
-
-                                {/* 
-                                </Link>
-                    <DeleteBtn onClick={() => this.deleteBook(book._id)} />
-                  </ListItem> */}
-
-
-
-
-
-
-
                             </div>
                             <br></br>
                             <br></br>

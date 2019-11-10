@@ -18,8 +18,6 @@ import truckPlaceHolder from "../TruckImages/fishnchips foodtruck.jpg";
 import axios from 'axios';
 
 
-
-
 class TruckForm extends React.Component {
     // track all the form values in state
     state = {

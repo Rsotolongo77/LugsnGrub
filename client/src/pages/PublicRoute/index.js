@@ -7,8 +7,6 @@ import placeHolder3 from './placeHolder3.jpg';
 import placeHolder4 from './placeHolder4.jpg';
 import placeHolder5 from './placeHolder5.jpg';
 import placeHolder6 from './placeHolder6.jpg';
-// import placeHolder7 from './placeHolder7.jpg';
-// import dropDownImg from './dropDown.jpg';
 import API from "../../utils/API"
 
 /*ToDo*/
@@ -16,7 +14,6 @@ import API from "../../utils/API"
  * Let's get some styling in here
  */
 
-/* This is a very simple component.. it probably doesn't need to be a smart component at this point but you never know what's goingto happen in the future */
 class PublicRoute extends Component {
 
     state = {

@@ -1,13 +1,4 @@
 import React from "react";
-// import {
-//   // BrowserRouter as Router,
-//   // Route,
-//   // Link,
-//   // Redirect,
-//   // Switch,
-//   // withRouter
-// } from 'react-router-dom';
-
 
 
 function Form(props) {
@@ -46,30 +37,6 @@ function Form(props) {
             onChange={props.handleInputChange}
             required
           />
-
-          {/* <br></br>
-
-        <input
-          className="custom-file-input"
-          id="truckPic"
-          type="file"
-          value={props.imageInput}
-          // placeholder={props.truckPic}
-          name="image"
-          onChange={props.onChangeInput}
-          required
-        />
-        <label 
-        className="custom-file-label" 
-        htmlFor="truckPic">{props.truckPic}</label> */}
-
-          {/* <input 
-          type="file" 
-          className="custom-file-input form-control" 
-          id="truckPic"
-          value={props.truckPic} 
-          name="image" 
-          onChange={props.onChangeInput} /> */}
 
           <br></br>
 
