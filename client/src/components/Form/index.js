@@ -113,7 +113,7 @@ function Form(props) {
           <button
             onClick={props.handleFormSubmit}
             type="submit"
-            className="btn btn-lg btn-danger float-right"
+            className="btn btn-lg float-right" id="formBtn"
           >
 
             Submit

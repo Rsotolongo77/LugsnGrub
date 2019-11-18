@@ -14,7 +14,7 @@ import './style.css';
 import API from "../../utils/API"
 // import { usernameTransfer } from "../../components/Login";
 import { truckId } from "../TruckMgt"
-import truckPlaceHolder from "../TruckImages/fishnchips foodtruck.jpg";
+// import truckPlaceHolder from "../TruckImages/fishnchips foodtruck.jpg";
 import axios from 'axios';
 
 
