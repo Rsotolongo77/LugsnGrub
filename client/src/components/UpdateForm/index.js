@@ -28,11 +28,13 @@ class TruckForm extends React.Component {
         truckSchedule: "",
         truckCuisine: "",
         image: "",
+        menu: "",
         file: "",
         filename: "Choose a File",
         uploadedFile: {},
         message: "",
-        displayImage: ""
+        displayImage: "",
+        displayMenu: ""
     };
     componentDidMount() {
         console.log(truckId)
@@ -55,7 +57,8 @@ class TruckForm extends React.Component {
                     truckMenu: truck.truckMenu,
                     truckSchedule: truck.truckSchedule,
                     truckCuisine: truck.truckCuisine,
-                    displayImage: truck.truckPic
+                    displayImage: truck.truckPic,
+                    displayMenu: truck.truckMenu
 
 
                 })
@@ -95,6 +98,7 @@ class TruckForm extends React.Component {
                         filePath: filePath
                     },
                     displayImage: filePath,
+                    displayMenu: filePath,
                     message: "File Uploaded"
                 })
             })
@@ -117,7 +121,8 @@ class TruckForm extends React.Component {
         API.updateTruck(truckId, {
             truckName: this.state.truckName,
             truckPic: this.state.uploadedFile.filePath,
-            truckMenu: this.state.truckMenu,
+            // truckMenu: this.state.truckMenu,
+            truckMenu: this.state.uploadedFile.filePath,
             truckSchedule: this.state.truckSchedule,
             truckCuisine: this.state.truckCuisine
         })
@@ -160,7 +165,8 @@ class TruckForm extends React.Component {
                                     id={this.state.truckName}
                                     truckPic={this.state.filename}
                                     imageInput={this.state.image}
-                                    truckMenu={this.state.truckMenu}
+                                    truckMenu={this.state.filename}
+                                    // truckMenu={this.state.truckMenu}
                                     truckSchedule={this.state.truckSchedule}
                                     truckCuisine={this.state.truckCuisine}
                                 />

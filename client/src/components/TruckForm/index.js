@@ -28,11 +28,13 @@ class TruckForm extends React.Component {
         truckSchedule: "",
         truckCuisine: "",
         image: "",
+        menu: "",
         file: "",
         filename: "Choose a File",
         uploadedFile: {},
         message: "",
-        displayImage: truckplaceholder
+        displayImage: truckplaceholder,
+        displyMenu: ""
     };
 
     handleInputChange = event => {
@@ -64,6 +66,7 @@ class TruckForm extends React.Component {
                         filePath: filePath
                     },
                     displayImage: filePath,
+                    displayMenu: filePath,
                     message: "File Uploaded"
                 })
             })
@@ -87,7 +90,8 @@ class TruckForm extends React.Component {
             username: usernameTransfer,
             truckName: this.state.truckName,
             truckPic: this.state.uploadedFile.filePath,
-            truckMenu: this.state.truckMenu,
+            truckMenu: this.state.uploadedFile.filePath,
+            // truckMenu: this.state.truckMenu,
             truckSchedule: this.state.truckSchedule,
             truckCuisine: this.state.truckCuisine
 
@@ -131,7 +135,8 @@ class TruckForm extends React.Component {
                                     truckPic={this.state.filename}
                                     imageInput={this.state.image}
                                     // truckPic={this.state.truckPic}
-                                    truckMenu={this.state.truckMenu}
+                                    // truckMenu={this.state.truckMenu}
+                                    truckMenu={this.state.filename}
                                     truckSchedule={this.state.truckSchedule}
                                     truckQuisine={this.state.truckQuisine}
                                 />

@@ -7,7 +7,7 @@ function Form(props) {
   return (
     <div>
       <form onSubmit={props.handleImageSubmit}>
-        <div className="custom-file mb-4">
+        <div className="custom-file mb-2">
           <input
             type="file"
             className="custom-file-input"
@@ -21,8 +21,37 @@ function Form(props) {
             htmlFor="truckPic">{props.truckPic}
           </label>
         </div>
-        <input type="submit" value="Upload Image" className="btn btn-primary btn-block mt-4" />
+        <input type="submit" value="Upload Truck Image" className="btn btn-primary btn-block" />
       </form>
+
+      <hr></hr>
+
+      <form onSubmit={props.handleImageSubmit}>
+        <div className="custom-file mb-2">
+          <input
+            type="file"
+            className="custom-file-input"
+            value={props.imageInput}
+            name="menu"
+            id="truckMenu"
+            onChange={props.onChangeInput}
+          />
+          <label
+            className="custom-file-label"
+            htmlFor="truckMenu">{props.truckMenu}
+          </label>
+        </div>
+        <input type="submit" value="Upload Truck Menu" className="btn btn-primary btn-block" />
+      </form>
+
+
+
+
+
+
+
+
+
       <form>
         <div className="form-group">
           <label htmlFor="Query">
@@ -40,7 +69,7 @@ function Form(props) {
 
           <br></br>
 
-          <input
+          {/* <input
             className="form-control"
             id="truckMenu"
             type="text"
@@ -49,7 +78,7 @@ function Form(props) {
             name="truckMenu"
             onChange={props.handleInputChange}
             required
-          />
+          /> */}
 
           <br></br>
 
