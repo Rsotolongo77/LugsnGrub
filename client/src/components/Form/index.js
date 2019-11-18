@@ -26,15 +26,15 @@ function Form(props) {
 
       <hr></hr>
 
-      <form onSubmit={props.handleImageSubmit}>
+      <form onSubmit={props.handleMenuSubmit}>
         <div className="custom-file mb-2">
           <input
             type="file"
             className="custom-file-input"
-            value={props.imageInput}
+            value={props.menuInput}
             name="menu"
             id="truckMenu"
-            onChange={props.onChangeInput}
+            onChange={props.onChangeInput2}
           />
           <label
             className="custom-file-label"
@@ -78,9 +78,9 @@ function Form(props) {
             name="truckMenu"
             onChange={props.handleInputChange}
             required
-          /> */}
+          />
 
-          <br></br>
+          <br></br> */}
 
           <input
             className="form-control"

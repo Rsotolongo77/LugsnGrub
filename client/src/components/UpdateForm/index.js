@@ -31,7 +31,10 @@ class TruckForm extends React.Component {
         menu: "",
         file: "",
         filename: "Choose a File",
+        file2: "",
+        filename2: "Choose a File",
         uploadedFile: {},
+        uploadedFile2: {},
         message: "",
         displayImage: "",
         displayMenu: ""
@@ -84,6 +87,14 @@ class TruckForm extends React.Component {
 
     }
 
+    onChange3 = e => {
+        this.setState({
+            file2: e.target.files[0],
+            filename2: e.target.files[0].name
+        })
+
+    }
+
     onSubmit = async e => {
         e.preventDefault()
         const formData = new FormData();
@@ -98,7 +109,6 @@ class TruckForm extends React.Component {
                         filePath: filePath
                     },
                     displayImage: filePath,
-                    displayMenu: filePath,
                     message: "File Uploaded"
                 })
             })
@@ -115,6 +125,7 @@ class TruckForm extends React.Component {
                 }
             })
     }
+
 
     handleFormSubmit = event => {
         event.preventDefault();
@@ -158,14 +169,17 @@ class TruckForm extends React.Component {
                             <div className='truckDetails'>
                                 <Form
                                     onChangeInput={this.onChange2}
+                                    onChangeInput2={this.onChange3}
                                     handleInputChange={this.handleInputChange}
                                     handleFormSubmit={this.handleFormSubmit}
                                     handleImageSubmit={this.onSubmit}
+                                    handleMenuSubmit={this.onSubmit}
                                     truckName={this.state.truckName}
                                     id={this.state.truckName}
                                     truckPic={this.state.filename}
                                     imageInput={this.state.image}
-                                    truckMenu={this.state.filename}
+                                    truckMenu={this.state.filename2}
+                                    menuInput={this.state.menu}
                                     // truckMenu={this.state.truckMenu}
                                     truckSchedule={this.state.truckSchedule}
                                     truckCuisine={this.state.truckCuisine}

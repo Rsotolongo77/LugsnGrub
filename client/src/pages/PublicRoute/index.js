@@ -84,7 +84,7 @@ class PublicRoute extends Component {
                             <option value="Chinese">Chinese</option>
                         </select>
                         <div className="input-group-append" onClick={this.submitForm}>
-                            <label class="input-group-text" for="inputGroupSelect02" id='cuisineBtn'>Submit</label>
+                            <label className="input-group-text" htmlFor="inputGroupSelect02" id='cuisineBtn'>Submit</label>
                         </div>
                     </div>
                 </div>
