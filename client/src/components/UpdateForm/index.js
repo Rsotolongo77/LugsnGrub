@@ -99,6 +99,7 @@ class TruckForm extends React.Component {
         e.preventDefault()
         const formData = new FormData();
         formData.append("file", this.state.file);
+        // formData.append("file2", this.state.file);
         axios.post("/upload", formData)
             .then(res => {
                 const { fileName, filePath } = res.data;
@@ -108,7 +109,41 @@ class TruckForm extends React.Component {
                         fileName: fileName,
                         filePath: filePath
                     },
+                    // uploadedFile2: {
+                    //     fileName: fileName,
+                    //     filePath: filePath
+                    // },
                     displayImage: filePath,
+                    message: "File Uploaded"
+                })
+            })
+            .catch(err => {
+                if (err.response.status === 500) {
+                    this.setState({
+                        message: "There was a problem with the server"
+                    })
+                } else {
+                    console.log(err.response.data.msg)
+                    this.setState({
+                        message: err.response.data.msg
+                    })
+                }
+            })
+    }
+
+    onSubmit2 = async e => {
+        e.preventDefault()
+        const formData = new FormData();
+        formData.append("file", this.state.file2);
+        axios.post("/upload", formData)
+            .then(res => {
+                const { fileName, filePath } = res.data;
+                console.log(filePath)
+                this.setState({
+                    uploadedFile2: {
+                        fileName: fileName,
+                        filePath: filePath
+                    },
                     message: "File Uploaded"
                 })
             })
@@ -133,7 +168,7 @@ class TruckForm extends React.Component {
             truckName: this.state.truckName,
             truckPic: this.state.uploadedFile.filePath,
             // truckMenu: this.state.truckMenu,
-            truckMenu: this.state.uploadedFile.filePath,
+            truckMenu: this.state.uploadedFile2.filePath,
             truckSchedule: this.state.truckSchedule,
             truckCuisine: this.state.truckCuisine
         })
@@ -173,7 +208,7 @@ class TruckForm extends React.Component {
                                     handleInputChange={this.handleInputChange}
                                     handleFormSubmit={this.handleFormSubmit}
                                     handleImageSubmit={this.onSubmit}
-                                    handleMenuSubmit={this.onSubmit}
+                                    handleMenuSubmit={this.onSubmit2}
                                     truckName={this.state.truckName}
                                     id={this.state.truckName}
                                     truckPic={this.state.filename}
