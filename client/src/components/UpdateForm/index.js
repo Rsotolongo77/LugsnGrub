@@ -29,15 +29,20 @@ class TruckForm extends React.Component {
         truckCuisine: "",
         image: "",
         menu: "",
+        schedule: "",
         file: "",
         filename: "Choose a File",
         file2: "",
         filename2: "Choose a File",
+        file3: "",
+        filename3: "Choose a File",
         uploadedFile: {},
         uploadedFile2: {},
+        uploadedFile3: {},
         message: "",
         displayImage: "",
-        displayMenu: ""
+        displayMenu: "",
+        displaySchedule: "",
     };
     componentDidMount() {
         console.log(truckId)
@@ -61,7 +66,8 @@ class TruckForm extends React.Component {
                     truckSchedule: truck.truckSchedule,
                     truckCuisine: truck.truckCuisine,
                     displayImage: truck.truckPic,
-                    displayMenu: truck.truckMenu
+                    displayMenu: truck.truckMenu,
+                    displaySchedule: truck.truckSchedule
 
 
                 })
@@ -91,6 +97,14 @@ class TruckForm extends React.Component {
         this.setState({
             file2: e.target.files[0],
             filename2: e.target.files[0].name
+        })
+
+    }
+
+    onChange4 = e => {
+        this.setState({
+            file3: e.target.files[0],
+            filename3: e.target.files[0].name
         })
 
     }
@@ -161,6 +175,36 @@ class TruckForm extends React.Component {
             })
     }
 
+    onSubmit3 = async e => {
+        e.preventDefault()
+        const formData = new FormData();
+        formData.append("file", this.state.file3);
+        axios.post("/upload", formData)
+            .then(res => {
+                const { fileName, filePath } = res.data;
+                console.log(filePath)
+                this.setState({
+                    uploadedFile3: {
+                        fileName: fileName,
+                        filePath: filePath
+                    },
+                    message: "File Uploaded"
+                })
+            })
+            .catch(err => {
+                if (err.response.status === 500) {
+                    this.setState({
+                        message: "There was a problem with the server"
+                    })
+                } else {
+                    console.log(err.response.data.msg)
+                    this.setState({
+                        message: err.response.data.msg
+                    })
+                }
+            })
+    }
+
 
     handleFormSubmit = event => {
         event.preventDefault();
@@ -169,7 +213,8 @@ class TruckForm extends React.Component {
             truckPic: this.state.uploadedFile.filePath,
             // truckMenu: this.state.truckMenu,
             truckMenu: this.state.uploadedFile2.filePath,
-            truckSchedule: this.state.truckSchedule,
+            // truckSchedule: this.state.truckSchedule,
+            truckSchedule: this.state.uploadedFile3.filePath,
             truckCuisine: this.state.truckCuisine
         })
 
@@ -205,18 +250,22 @@ class TruckForm extends React.Component {
                                 <Form
                                     onChangeInput={this.onChange2}
                                     onChangeInput2={this.onChange3}
+                                    onChangeInput3={this.onChange4}
                                     handleInputChange={this.handleInputChange}
                                     handleFormSubmit={this.handleFormSubmit}
                                     handleImageSubmit={this.onSubmit}
                                     handleMenuSubmit={this.onSubmit2}
+                                    handleScheduleSubmit={this.onSubmit3}
                                     truckName={this.state.truckName}
                                     id={this.state.truckName}
                                     truckPic={this.state.filename}
                                     imageInput={this.state.image}
                                     truckMenu={this.state.filename2}
+                                    truckSchedule={this.state.filename3}
+                                    scheduleInput={this.state.schedule}
                                     menuInput={this.state.menu}
                                     // truckMenu={this.state.truckMenu}
-                                    truckSchedule={this.state.truckSchedule}
+                                    // truckSchedule={this.state.truckSchedule}
                                     truckCuisine={this.state.truckCuisine}
                                 />
 

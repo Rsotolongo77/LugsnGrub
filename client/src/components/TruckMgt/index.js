@@ -79,6 +79,7 @@ class TruckMgt extends React.Component {
 
 
                                 <h3 id='truckHead'>Menu: <img src={truck.truckMenu} alt={'Truck Menu'} id='menuPic' /></h3>
+                                <h3 id='truckHead'>Schedule: <img src={truck.truckSchedule} alt={'Truck Schedule'} id='menuPic' /></h3>
 
 
 
@@ -99,7 +100,7 @@ class TruckMgt extends React.Component {
                                 {/* <h3 id='truckHead'>Menu: {truck.truckMenu}</h3> */}
 
 
-                                <h3 id='truckHead'>Schedule: {truck.truckSchedule}</h3>
+                                {/* <h3 id='truckHead'>Schedule: {truck.truckSchedule}</h3> */}
                                 <h3 id='truckHead'>Cuisine: {truck.truckCuisine}</h3>
                                 <Link id='updateBtn'
                                     onClick={() => this.getId(truck._id)}

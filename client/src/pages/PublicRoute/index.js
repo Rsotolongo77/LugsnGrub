@@ -101,7 +101,8 @@ class PublicRoute extends Component {
                                 <h1 className='details2'>Truck: {item.truckName}</h1>
                                 <img src={item.truckPic} alt={'Feature truck'} id='truckImgHome2' />
                                 <img src={item.truckMenu} alt={'Truck Menu'} id='menuPic' />
-                                <p className='details'>Schedule: {item.truckSchedule}</p>
+                                {/* <p className='details'>Schedule: {item.truckSchedule}</p> */}
+                                <img src={item.truckSchedule} alt={'Truck Schedule'} id='menuPic' />
 
                             </div>
                         </Col>

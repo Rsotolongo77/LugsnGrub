@@ -24,7 +24,7 @@ function Form(props) {
         <input type="submit" value="Upload Truck Image" className="btn btn-primary btn-block" />
       </form>
 
-      <hr></hr>
+      <hr id="uploadLine"></hr>
 
       <form onSubmit={props.handleMenuSubmit}>
         <div className="custom-file mb-2">
@@ -44,27 +44,27 @@ function Form(props) {
         <input type="submit" value="Upload Truck Menu" className="btn btn-primary btn-block" />
       </form>
 
-      <hr></hr>
+      <hr id="uploadLine"></hr>
 
-      <form onSubmit={props.handleMenuSubmit}>
+      <form onSubmit={props.handleScheduleSubmit}>
         <div className="custom-file mb-2">
           <input
             type="file"
             className="custom-file-input"
-            value={props.menuInput}
-            name="menu"
-            id="truckMenu"
-            onChange={props.onChangeInput2}
+            value={props.scheduleInput}
+            name="schedule"
+            id="truckSchedule"
+            onChange={props.onChangeInput3}
           />
           <label
             className="custom-file-label"
-            htmlFor="truckMenu">{props.truckMenu}
+            htmlFor="truckMenu">{props.truckSchedule}
           </label>
         </div>
-        <input type="submit" value="Upload Truck Menu" className="btn btn-primary btn-block" />
+        <input type="submit" value="Upload Truck Schedule" className="btn btn-primary btn-block" />
       </form>
 
-
+      <hr id="uploadLine"></hr>
 
 
 
@@ -112,7 +112,7 @@ function Form(props) {
             required
           /> */}
 
-          <br></br>
+
 
           <input
             className="form-control"
