@@ -39,8 +39,8 @@ body {
 }
 
 .featured {
-  background-color: rgba(187, 186, 186, 0.63);
-  color: black;
+  background-color: rgba(77, 77, 77, 0.795);
+  color: white;
   font-size: 30px;
   font-weight: 800;
   font-family: 'Orbitron', sans-serif;
@@ -126,10 +126,11 @@ img {
 }
 
 .details {
-  background-color: rgba(206, 206, 155, 0.349);
+  background-color: rgba(228, 228, 190, 0.904);
   margin-top: 3%;
   margin-left: auto;
   margin-right: auto;
+  margin-bottom: 3%;
   color: #555;
   font-size: 22px;
   padding: 0 !important;
@@ -146,6 +147,26 @@ img {
   width: 800px;
   height: 80px;
   padding-top: 2%;
+}
+
+#menuPic {
+  /* border: 1px solid rgb(101, 103, 197); */
+  border-radius: 5px;
+  height: 370px;
+  width: 570px;
+  margin: auto;
+}
+
+#truckHead {
+  margin-top: 0;
+  /* font-family: 'Signika Negative', sans-serif; */
+  list-style: none;
+  border-bottom: 1px dotted rgb(167, 165, 165);
+  text-indent: 25px;
+  height: auto;
+  padding: 10px;
+  text-transform: capitalize;
+
 }
 
 #leftCol {
@@ -197,7 +218,7 @@ img {
 }
 
 .loginForm {
-    background-color: rgba(224, 224, 224, 0.575);
+    background-color: rgba(224, 224, 224, 0.767);
     color: rgb(0, 87, 128);
     justify-content: center;
     display: inline-block;
@@ -216,7 +237,7 @@ img {
   }
 
  #registerCont {
-    background-color: rgba(224, 224, 224, 0.575);
+    background-color: rgba(224, 224, 224, 0.767);
     color: rgb(0, 87, 128);
     font-family: 'Signika Negative', sans-serif;
     justify-content: center;

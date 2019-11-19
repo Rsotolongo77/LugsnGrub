@@ -9,7 +9,7 @@
 }
 
 .details {
-    background-color: rgba(206, 206, 155, 0.349);
+    background-color: rgba(228, 228, 190, 0.904);
     margin-top: 3%;
     margin-left: auto;
     margin-right: auto;
@@ -29,20 +29,6 @@
     height: 370px;
     width: 670px;
     margin-top: 2.5%;
-}
-
-#menuModal {
-    height: 80vh;
-}
-
-#modalBtn {
-    background-color: rgb(204, 83, 83);
-    border-radius: 5px;
-    height: 35px;
-    padding-bottom: 30px;
-    margin-left: 2%;
-    width: 130px;
-    border: none;
 }
 
 #menuPic {

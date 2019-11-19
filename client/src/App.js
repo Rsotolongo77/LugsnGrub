@@ -1,4 +1,4 @@
-import React from 'react'
+import React from 'react';
 import {
 	BrowserRouter as Router,
 	Route,
@@ -76,19 +76,6 @@ const AuthButton = withRouter(({ history }) => (
 		)
 ))
 
-// const truckButton = withRouter(({ history }) => (
-// 	Auth.isAuthenticated ? (
-// 	  <button className="btn btn-danger"
-// 		onClick={() => {
-// 		  history.push('/truckmgt')
-// 		}}>
-// 		Manage Trucks
-// 			  </button>
-// 	) : (
-// 		<span></span>
-// 	  )
-//   ))
-
 
 // This is the private route component this checks for an authorized user here
 const PrivateRoute = ({ component: Component, ...rest }) => (
@@ -103,6 +90,8 @@ const PrivateRoute = ({ component: Component, ...rest }) => (
 			)
 	)} />
 )
+
+
 
 export { App, AuthButton }
 
