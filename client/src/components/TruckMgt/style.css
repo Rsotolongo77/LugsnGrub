@@ -9,14 +9,14 @@
 }
 
 .details {
-    background-color: rgba(190, 190, 158, 0.349);
+    background-color: rgba(206, 206, 155, 0.349);
     margin-top: 3%;
     margin-left: auto;
     margin-right: auto;
     color: #555;
     font-size: 22px;
     padding: 0 !important;
-    width: 570px;
+    width: 670px;
     font-family: courier, monospace;
     border: 1px solid #b3b2b2;
     border-radius: 5px;
@@ -26,8 +26,8 @@
 #detailsPic {
     /* border: 1px solid rgb(101, 103, 197); */
     border-radius: 10px;
-    height: 270px;
-    width: 470px;
+    height: 370px;
+    width: 670px;
     margin-top: 2.5%;
 }
 

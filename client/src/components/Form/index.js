@@ -44,6 +44,25 @@ function Form(props) {
         <input type="submit" value="Upload Truck Menu" className="btn btn-primary btn-block" />
       </form>
 
+      <hr></hr>
+
+      <form onSubmit={props.handleMenuSubmit}>
+        <div className="custom-file mb-2">
+          <input
+            type="file"
+            className="custom-file-input"
+            value={props.menuInput}
+            name="menu"
+            id="truckMenu"
+            onChange={props.onChangeInput2}
+          />
+          <label
+            className="custom-file-label"
+            htmlFor="truckMenu">{props.truckMenu}
+          </label>
+        </div>
+        <input type="submit" value="Upload Truck Menu" className="btn btn-primary btn-block" />
+      </form>
 
 
 
@@ -82,7 +101,7 @@ function Form(props) {
 
           <br></br> */}
 
-          <input
+          {/* <input
             className="form-control"
             id="truckSchedule"
             type="text"
@@ -91,7 +110,7 @@ function Form(props) {
             name="truckSchedule"
             onChange={props.handleInputChange}
             required
-          />
+          /> */}
 
           <br></br>
 

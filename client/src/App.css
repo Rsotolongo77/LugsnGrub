@@ -74,6 +74,16 @@ body {
   margin-top: 2.5%;
 }
 
+#menuPic {
+  /* border: 1px solid rgb(101, 103, 197); */
+  border-radius: 5px;
+  height: 370px;
+  width: 570px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 7%;
+}
+
 #homeRow {
   justify-content: center;
   display: inline-block;
@@ -114,17 +124,26 @@ img {
 }
 
 .details {
-  background-color: rgba(190, 190, 158, 0.349);
+  background-color: rgba(206, 206, 155, 0.349);
   margin-top: 3%;
   margin-left: auto;
   margin-right: auto;
   color: #555;
   font-size: 22px;
   padding: 0 !important;
-  width: 570px;
+  width: 670px;
   font-family: courier, monospace;
   border: 1px solid #b3b2b2;
   border-radius: 5px;
+}
+
+.details2 {
+  color: rgb(38, 147, 197);
+  background-color: rgba(0, 0, 0, 0.705);
+  border-radius: 10px;
+  width: 800px;
+  height: 80px;
+  padding-top: 2%;
 }
 
 #leftCol {

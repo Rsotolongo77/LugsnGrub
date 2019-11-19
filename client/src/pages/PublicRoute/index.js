@@ -98,9 +98,9 @@ class PublicRoute extends Component {
                     <div id="leftCol2">
                         <Col size="lg-12 sm-12">
                             <div className="imgCont2">
+                                <h1 className='details2'>Truck: {item.truckName}</h1>
                                 <img src={item.truckPic} alt={'Feature truck'} id='truckImgHome2' />
-                                <p className='details'>Truck: {item.truckName}</p>
-                                <p className='details'>Menu: {item.truckMenu}</p>
+                                <img src={item.truckMenu} alt={'Truck Menu'} id='menuPic' />
                                 <p className='details'>Schedule: {item.truckSchedule}</p>
 
                             </div>
