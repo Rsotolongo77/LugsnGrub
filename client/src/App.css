@@ -226,7 +226,8 @@ img {
     width: 850px;
     height: 450px;
     border-radius: 20px;
-    margin-top: 5%;
+    margin-top: 8%;
+    margin-bottom: 9%;
     padding-top: 5%;
   }
 
@@ -247,6 +248,7 @@ img {
     height: 500px;
     border-radius: 20px;
     margin-top: 7%;
+    margin-bottom: 7%;
 
  }
 
@@ -318,3 +320,8 @@ img {
     text-shadow: 0 0 20px #fff, 0 0 30px #ff4da6, 0 0 40px #ff4da6, 0 0 50px #ff4da6, 0 0 60px #ff4da6, 0 0 70px #ff4da6, 0 0 80px #ff4da6;
   }
 }
+
+/* #buffer {
+  height: 25vh;
+  background-color:none;
+} */

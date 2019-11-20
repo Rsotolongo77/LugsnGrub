@@ -30,6 +30,7 @@ class LoginForm extends React.Component {
 				</div>
 			</form>
 
+
 		)
 	}
 }

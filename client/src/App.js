@@ -25,6 +25,7 @@ import featured3 from './components/featured3';
 import featured4 from './components/featured4';
 import featured5 from './components/featured5';
 import featured6 from './components/featured6';
+import ScrollToTop from './components/ScrollToTop'
 import './App.css';
 
 
@@ -35,6 +36,7 @@ class App extends React.Component {
 
 		return (
 			<Router>
+
 				<div>
 					<Nav className="App-header" />
 					<Container fluid>
