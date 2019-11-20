@@ -7,6 +7,7 @@ import placeHolder3 from './placeHolder3.jpg';
 import placeHolder4 from './placeHolder4.jpg';
 import placeHolder5 from './placeHolder5.jpg';
 import placeHolder6 from './placeHolder6.jpg';
+import { Link } from "react-router-dom";
 import API from "../../utils/API"
 
 /*ToDo*/
@@ -104,9 +105,6 @@ class PublicRoute extends Component {
                                     <h3 id='truckHead'>Menu: <img src={item.truckMenu} alt={'Truck Menu'} id='menuPic' /></h3>
                                     <h3 id='truckHead'>Schedule: <img src={item.truckSchedule} alt={'Truck Schedule'} id='menuPic' /></h3>
                                 </div>
-                                {/* <img src={item.truckMenu} alt={'Truck Menu'} id='menuPic' />
-                                
-                                <img src={item.truckSchedule} alt={'Truck Schedule'} id='menuPic' /> */}
 
                             </div>
                         </Col>
@@ -130,7 +128,7 @@ class PublicRoute extends Component {
                         <Col size="lg-6 sm-12">
                             <div className="imgCont">
                                 <img src={placeHolder1} alt={'Feature truck'} id='truckImgHome' />
-                                <p className='featuredDisc'>Happy Beginning</p>
+                                <Link className='featuredDisc' to='/featured1'>Sweet Temptations</Link>
                             </div>
                         </Col>
                     </div>
@@ -138,7 +136,7 @@ class PublicRoute extends Component {
                         <Col size="lg-6 sm-12">
                             <div className="imgCont">
                                 <img src={placeHolder2} alt={'Feature truck'} id='truckImgHome' />
-                                <p className='featuredDisc'>Hotdog Heaven</p>
+                                <Link className='featuredDisc' to='/featured2'>Hotdog Heaven</Link>
                             </div>
                         </Col>
                     </div>
@@ -149,7 +147,7 @@ class PublicRoute extends Component {
                         <Col size="lg-6 sm-12" id="rightCol">
                             <div className="imgCont">
                                 <img src={placeHolder3} alt={'Feature truck'} id='truckImgHome' />
-                                <p className='featuredDisc'>Zatachitos</p>
+                                <Link className='featuredDisc' to='/featured3'>Zatachitos</Link>
                             </div>
                         </Col>
                     </div>
@@ -157,7 +155,7 @@ class PublicRoute extends Component {
                         <Col size="lg-6 sm-12" id="rightCol">
                             <div className="imgCont">
                                 <img src={placeHolder4} alt={'Feature truck'} id='truckImgHome' />
-                                <p className='featuredDisc'>England Visits</p>
+                                <Link className='featuredDisc' to='/featured4'>England Visits</Link>
                             </div>
                         </Col>
                     </div>
@@ -167,7 +165,7 @@ class PublicRoute extends Component {
                         <Col size="lg-6 sm-12" id="rightCol">
                             <div className="imgCont">
                                 <img src={placeHolder5} alt={'Feature truck'} id='truckImgHome' />
-                                <p className='featuredDisc'>Doughnut Delights</p>
+                                <Link className='featuredDisc' to='/featured5'>Doughnut Delights</Link>
                             </div>
                         </Col>
                     </div>
@@ -175,7 +173,7 @@ class PublicRoute extends Component {
                         <Col size="lg-6 sm-12" id="rightCol">
                             <div className="imgCont">
                                 <img src={placeHolder6} alt={'Feature truck'} id='truckImgHome' />
-                                <p className='featuredDisc'>The Teal Tavern</p>
+                                <Link className='featuredDisc' to='/featured6'>The Teal Tavern</Link>
                             </div>
                         </Col>
                     </div>

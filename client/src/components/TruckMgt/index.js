@@ -80,27 +80,6 @@ class TruckMgt extends React.Component {
 
                                 <h3 id='truckHead'>Menu: <img src={truck.truckMenu} alt={'Truck Menu'} id='menuPic' /></h3>
                                 <h3 id='truckHead'>Schedule: <img src={truck.truckSchedule} alt={'Truck Schedule'} id='menuPic' /></h3>
-
-
-
-
-
-                                {/* <button type="button" className="btn btn-primary" id="modalBtn" data-toggle="modal" data-target=".bd-example-modal-lg">View Menu</button>
-
-                                    <div className="modal fade bd-example-modal-lg" tabIndex="-1" role="dialog" aria-labelledby="myLargeModalLabel" aria-hidden="true">
-                                        <div className="modal-dialog modal-lg">
-                                            <div className="modal-content" id="menuModal">
-                                                <img src={truck.truckMenu} alt={'Truck Menu'} id='menuPic' />
-                                            </div>
-                                        </div>
-                                    </div> */}
-
-
-                                {/* <img src={truck.truckMenu} alt={'Truck Menu'} id='menuPic' /> */}
-                                {/* <h3 id='truckHead'>Menu: {truck.truckMenu}</h3> */}
-
-
-                                {/* <h3 id='truckHead'>Schedule: {truck.truckSchedule}</h3> */}
                                 <h3 id='truckHead'>Cuisine: {truck.truckCuisine}</h3>
                                 <Link id='updateBtn'
                                     onClick={() => this.getId(truck._id)}

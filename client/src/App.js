@@ -19,6 +19,12 @@ import users from './components/users';
 import TruckForm from './components/TruckForm';
 import { TruckMgt } from './components/TruckMgt';
 import UpdateForm from './components/UpdateForm';
+import featured1 from './components/featured1';
+import featured2 from './components/featured2';
+import featured3 from './components/featured3';
+import featured4 from './components/featured4';
+import featured5 from './components/featured5';
+import featured6 from './components/featured6';
 import './App.css';
 
 
@@ -43,7 +49,12 @@ class App extends React.Component {
 							<Route exact path="/" component={PublicRoute} />
 							<Route exact path="/login" component={Login} />
 							<Route exact path="/login" component={AuthButton} />
-							{/* <Route exact path="/login" component={truckButton} /> */}
+							<Route exact path="/featured1" component={featured1} />
+							<Route exact path="/featured2" component={featured2} />
+							<Route exact path="/featured3" component={featured3} />
+							<Route exact path="/featured4" component={featured4} />
+							<Route exact path="/featured5" component={featured5} />
+							<Route exact path="/featured6" component={featured6} />
 							<Route exact path="/register" component={Register} />
 							<PrivateRoute exact path="/protected" component={users} />
 							<PrivateRoute exact path="/users" component={users} />
@@ -51,7 +62,7 @@ class App extends React.Component {
 							<PrivateRoute exact path="/truckform" component={TruckForm} />
 							<PrivateRoute exact path="/updateform" component={UpdateForm} />
 
-							{/* <Route component={NoMatch} /> */}
+
 						</Switch>
 					</Container>
 					<Footer />

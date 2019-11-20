@@ -1,0 +1,24 @@
+#truckHeadMain1 {
+    color: teal;
+    margin-top: 3%;
+    text-shadow: .1em .1em .2em rgba(0, 0, 0, 0.6);
+}
+
+#detailsPic1 {
+    /* border: 1px solid rgb(101, 103, 197); */
+    border-radius: 10px;
+    height: 270px;
+    width: 470px;
+    margin-top: 2.5%;
+    margin-bottom: 4%;
+}
+
+#menuPic1 {
+    /* border: 1px solid rgb(101, 103, 197); */
+    border-radius: 5px;
+    height: 370px;
+    width: 570px;
+    margin: auto;
+    margin-top: 2%;
+
+}
