@@ -13,7 +13,6 @@ import { Login } from "./components/Login";
 import Register from "./components/Register";
 import { Container } from "./components/Grid";
 import PublicRoute from "./pages/PublicRoute";
-// import ProtectedRoute from "./pages/PublicRoute";
 import Footer from './components/Footer';
 import users from './components/users';
 import TruckForm from './components/TruckForm';
@@ -38,14 +37,9 @@ class App extends React.Component {
 			<Router>
 
 				<div>
+					<ScrollToTop />
 					<Nav className="App-header" />
 					<Container fluid>
-						{/* <AuthButton /> */}
-						{/* <ul style={listStyle}>
-					<li><Link to="/public">Public Page</Link></li>
-					<li><Link to="/protected">Protected Page</Link></li>
-					<li><Link to="/register">Register a New User</Link></li>
-				</ul> */}
 
 						<Switch>
 							<Route exact path="/" component={PublicRoute} />

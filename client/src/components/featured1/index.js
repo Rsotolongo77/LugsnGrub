@@ -9,6 +9,8 @@ import './style.css'
 
 class featured1 extends Component {
 
+
+
     render() {
         return (
             <Container fluid>
