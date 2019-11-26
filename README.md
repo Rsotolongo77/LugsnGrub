@@ -15,12 +15,12 @@
 
 # To enjoy the deployed site visit : https://evening-coast-01855.herokuapp.com/
 
-![ ](public/readMeImages/pic1)
+![ ](client/readMeImages/pic1)
 
-![ ](public/readMeImages/pic2)
+![ ](client/readMeImages/pic2)
 
-![ ](public/readMeImages/pic3)
+![ ](client/readMeImages/pic3)
 
-![ ](public/readMeImages/pic4)
+![ ](client/readMeImages/pic4)
 
-![ ](public/readMeImages/pic5)
+![ ](client/readMeImages/pic5)
