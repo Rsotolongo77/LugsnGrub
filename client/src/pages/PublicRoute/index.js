@@ -64,15 +64,15 @@ class PublicRoute extends Component {
                 <br></br>
                 <br></br>
                 <br></br>
-                <Row>
-                    <Col size="md-6 sm-12">
+                <Container>
+                    <Row>
                         <Jumbotron>
                             <h1><b>Welcome to Lugs N' Grub!</b></h1>
                             <h4>Let's face it, food trucks now-days are an incredibly great thing. We simply aim to connect you with this greatness. So whether
                             you want to checkout the featured trucks below, or you want to find where your next delicious meal will be, we are here to help!</h4>
                         </Jumbotron>
-                    </Col>
-                </Row>
+                    </Row>
+                </Container>
                 <div id='dropDownCont'>
 
                     <div className="input-group mb-3" id='dropDown'>
@@ -96,88 +96,62 @@ class PublicRoute extends Component {
 
                 {/* <Row id='homeRow1'> */}
                 {this.state.results.map(item => (
-                    <div id="leftCol2">
-                        <Col size="lg-12 sm-12">
-                            <div className="imgCont2">
-                                <h1 className='details2'>Truck: {item.truckName}</h1>
-                                <img src={item.truckPic} alt={'Feature truck'} id='truckImgHome2' />
-                                <div className='details'>
-                                    <h3 id='truckHead'>Menu: <img src={item.truckMenu} alt={'Truck Menu'} id='menuPic' /></h3>
-                                    <h3 id='truckHead'>Schedule: <img src={item.truckSchedule} alt={'Truck Schedule'} id='menuPic' /></h3>
-                                </div>
-
+                    <Col size="lg-12 sm-12" id="leftCol2">
+                        <div className="imgCont2">
+                            <h1 className='details2'>Truck: {item.truckName}</h1>
+                            <img src={item.truckPic} alt={'Feature truck'} id='truckImgHome2' />
+                            <div className='details'>
+                                <h3 id='truckHead'>Menu: <img src={item.truckMenu} alt={'Truck Menu'} id='menuPic' /></h3>
+                                <h3 id='truckHead'>Schedule: <img src={item.truckSchedule} alt={'Truck Schedule'} id='menuPic' /></h3>
                             </div>
-                        </Col>
-                    </div>
 
+                        </div>
+                    </Col>
                 ))}
                 {/* </Row> */}
 
 
+                <Container>
+                    <Row>
+                        <Col size="lg-12 sm-12">
+                            <div className='featured'>
+                                <p><b>Featured Trucks!</b></p>
+                            </div>
+                        </Col>
+                    </Row>
 
-                <Row>
-                    <Col size="md-12 sm-12">
-                        <div className='featured'>
-                            <p><b>Featured Trucks!</b></p>
+                    <Row id='homeRow'>
+                        <div className="imgCont">
+                            <img src={placeHolder1} alt={'Feature truck'} id='truckImgHome' />
+                            <Link className='featuredDisc' to='/featured1'>Sweet Temptations</Link>
                         </div>
-                    </Col>
-                </Row>
+                        <div className="imgCont">
+                            <img src={placeHolder2} alt={'Feature truck'} id='truckImgHome' />
+                            <Link className='featuredDisc' to='/featured2'>Hotdog Heaven</Link>
+                        </div>
+                    </Row>
 
-                <Row id='homeRow'>
-                    <div id="leftCol">
-                        <Col size="lg-6 sm-12">
-                            <div className="imgCont">
-                                <img src={placeHolder1} alt={'Feature truck'} id='truckImgHome' />
-                                <Link className='featuredDisc' to='/featured1'>Sweet Temptations</Link>
-                            </div>
-                        </Col>
-                    </div>
-                    <div id='rightCol'>
-                        <Col size="lg-6 sm-12">
-                            <div className="imgCont">
-                                <img src={placeHolder2} alt={'Feature truck'} id='truckImgHome' />
-                                <Link className='featuredDisc' to='/featured2'>Hotdog Heaven</Link>
-                            </div>
-                        </Col>
-                    </div>
-                </Row>
-
-                <Row id='homeRow'>
-                    <div id='leftCol'>
-                        <Col size="lg-6 sm-12" id="rightCol">
-                            <div className="imgCont">
-                                <img src={placeHolder3} alt={'Feature truck'} id='truckImgHome' />
-                                <Link className='featuredDisc' to='/featured3'>Zatachitos</Link>
-                            </div>
-                        </Col>
-                    </div>
-                    <div id='rightCol'>
-                        <Col size="lg-6 sm-12" id="rightCol">
-                            <div className="imgCont">
-                                <img src={placeHolder4} alt={'Feature truck'} id='truckImgHome' />
-                                <Link className='featuredDisc' to='/featured4'>England Visits</Link>
-                            </div>
-                        </Col>
-                    </div>
-                </Row>
-                <Row id='homeRow'>
-                    <div id='leftCol'>
-                        <Col size="lg-6 sm-12" id="rightCol">
-                            <div className="imgCont">
-                                <img src={placeHolder5} alt={'Feature truck'} id='truckImgHome' />
-                                <Link className='featuredDisc' to='/featured5'>Doughnut Delights</Link>
-                            </div>
-                        </Col>
-                    </div>
-                    <div id='rightCol'>
-                        <Col size="lg-6 sm-12" id="rightCol">
-                            <div className="imgCont">
-                                <img src={placeHolder6} alt={'Feature truck'} id='truckImgHome' />
-                                <Link className='featuredDisc' to='/featured6'>The Teal Tavern</Link>
-                            </div>
-                        </Col>
-                    </div>
-                </Row>
+                    <Row id='homeRow'>
+                        <div className="imgCont">
+                            <img src={placeHolder3} alt={'Feature truck'} id='truckImgHome' />
+                            <Link className='featuredDisc' to='/featured3'>Zatachitos</Link>
+                        </div>
+                        <div className="imgCont">
+                            <img src={placeHolder4} alt={'Feature truck'} id='truckImgHome' />
+                            <Link className='featuredDisc' to='/featured4'>England Visits</Link>
+                        </div>
+                    </Row>
+                    <Row id='homeRow'>
+                        <div className="imgCont">
+                            <img src={placeHolder5} alt={'Feature truck'} id='truckImgHome' />
+                            <Link className='featuredDisc' to='/featured5'>Doughnut Delights</Link>
+                        </div>
+                        <div className="imgCont">
+                            <img src={placeHolder6} alt={'Feature truck'} id='truckImgHome' />
+                            <Link className='featuredDisc' to='/featured6'>The Teal Tavern</Link>
+                        </div>
+                    </Row>
+                </Container>
             </Container >
         )
     }
