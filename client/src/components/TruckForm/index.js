@@ -175,15 +175,12 @@ class TruckForm extends React.Component {
             truckName: this.state.truckName,
             truckPic: this.state.uploadedFile.filePath,
             truckMenu: this.state.uploadedFile2.filePath,
-            // truckMenu: this.state.truckMenu,
             truckSchedule: this.state.uploadedFile3.filePath,
             truckCuisine: this.state.truckCuisine
 
         })
             .then(res => {
                 console.log(res)
-                // window.location = "/truckmgt";
-                // return < Redirect to='/truckmgt' />
                 this.routeChange()
             })
             .catch(err => console.log(err));
@@ -222,13 +219,10 @@ class TruckForm extends React.Component {
                                     truckName={this.state.truckName}
                                     truckPic={this.state.filename}
                                     imageInput={this.state.image}
-                                    // truckPic={this.state.truckPic}
-                                    // truckMenu={this.state.truckMenu}
                                     truckMenu={this.state.filename2}
                                     truckSchedule={this.state.filename3}
                                     scheduleInput={this.state.schedule}
                                     menuInput={this.state.menu}
-                                    // truckSchedule={this.state.truckSchedule}
                                     truckCuisine={this.state.truckCuisine}
                                 />
 

@@ -66,11 +66,6 @@ function Form(props) {
 
       <hr id="uploadLine"></hr>
 
-
-
-
-
-
       <form>
         <div className="form-group">
           <label htmlFor="Query">
@@ -87,32 +82,6 @@ function Form(props) {
           />
 
           <br></br>
-
-          {/* <input
-            className="form-control"
-            id="truckMenu"
-            type="text"
-            value={props.truckMenu}
-            placeholder="Menu"
-            name="truckMenu"
-            onChange={props.handleInputChange}
-            required
-          />
-
-          <br></br> */}
-
-          {/* <input
-            className="form-control"
-            id="truckSchedule"
-            type="text"
-            value={props.truckSchedule}
-            placeholder="Schedule"
-            name="truckSchedule"
-            onChange={props.handleInputChange}
-            required
-          /> */}
-
-
 
           <input
             className="form-control"
@@ -132,9 +101,7 @@ function Form(props) {
           <button
             onClick={props.handleFormSubmit}
             type="submit"
-            className="btn btn-lg float-right" id="formBtn"
-          >
-
+            className="btn btn-lg float-right" id="formBtn">
             Submit
         </button>
         </div>

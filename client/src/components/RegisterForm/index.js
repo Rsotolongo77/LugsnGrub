@@ -3,10 +3,6 @@ import React from 'react'
 
 
 class RegisterForm extends React.Component {
-	// refs
-	// form: null;
-	// usernameElem: null;
-	// passwordElem: null;
 
 	render() {
 		const { onRegister } = this.props;

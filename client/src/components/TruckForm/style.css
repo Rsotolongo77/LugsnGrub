@@ -2,7 +2,10 @@
     background-color: rgba(224, 224, 224, 0.801);
     color: rgb(0, 87, 128);
     justify-content: center;
-    margin: auto;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 6%;
+    margin-bottom: 7%;
     width: 1300px;
     height: 650px;
 }
