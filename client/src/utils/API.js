@@ -15,19 +15,19 @@ export default {
         return axios.get("/api/trucks/truck/" + id);
     },
 
-    // Gets the book with the given id
+    // Gets the truck with the given id
     updateTruck: function (id, updateTruck) {
 
         return axios.put("/api/trucks/truck/" + id, updateTruck);
     },
 
-    // Saves a book to the database
+    // Saves a truck to the database
     submitTruck: function (createTruck) {
         console.log("Create Truck:", createTruck);
         return axios.post("/api/trucks/" + createTruck.username, createTruck);
     },
 
-    // Deletes the book with the given id
+    // Deletes the truck with the given id
     deleteTruck: function (id) {
         console.log("Made it here.");
         return axios.delete("/api/trucks/truck/" + id);

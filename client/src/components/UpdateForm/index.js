@@ -8,18 +8,14 @@ import {
     // withRouter
 } from 'react-router-dom';
 import Form from '../Form';
-// import truckplaceholder from './truckplaceholder.jpg';
 import { Col, Row, Container } from "../../components/Grid";
 import './style.css';
 import API from "../../utils/API"
-// import { usernameTransfer } from "../../components/Login";
 import { truckId } from "../TruckMgt"
-// import truckPlaceHolder from "../TruckImages/fishnchips foodtruck.jpg";
 import axios from 'axios';
 
 
 class TruckForm extends React.Component {
-    // track all the form values in state
     state = {
         id: truckId,
         truckName: "",
@@ -123,10 +119,6 @@ class TruckForm extends React.Component {
                         fileName: fileName,
                         filePath: filePath
                     },
-                    // uploadedFile2: {
-                    //     fileName: fileName,
-                    //     filePath: filePath
-                    // },
                     displayImage: filePath,
                     message: "File Uploaded"
                 })
@@ -211,17 +203,13 @@ class TruckForm extends React.Component {
         API.updateTruck(truckId, {
             truckName: this.state.truckName,
             truckPic: this.state.uploadedFile.filePath,
-            // truckMenu: this.state.truckMenu,
             truckMenu: this.state.uploadedFile2.filePath,
-            // truckSchedule: this.state.truckSchedule,
             truckSchedule: this.state.uploadedFile3.filePath,
             truckCuisine: this.state.truckCuisine
         })
 
             .then(res => {
                 console.log(res)
-                // window.location = "/truckmgt";
-                // return < Redirect to='/truckmgt' />
                 this.routeChange()
             })
             .catch(err => console.log(err));
@@ -264,8 +252,6 @@ class TruckForm extends React.Component {
                                     truckSchedule={this.state.filename3}
                                     scheduleInput={this.state.schedule}
                                     menuInput={this.state.menu}
-                                    // truckMenu={this.state.truckMenu}
-                                    // truckSchedule={this.state.truckSchedule}
                                     truckCuisine={this.state.truckCuisine}
                                 />
 
