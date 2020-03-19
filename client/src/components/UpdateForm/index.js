@@ -1,12 +1,4 @@
 import React from 'react';
-import {
-    // BrowserRouter as Router,
-    // Route,
-    // Link,
-    // Redirect,
-    // Switch,
-    // withRouter
-} from 'react-router-dom';
 import Form from '../Form';
 import { Col, Row, Container } from "../../components/Grid";
 import './style.css';

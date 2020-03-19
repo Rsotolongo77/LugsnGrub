@@ -20,7 +20,7 @@ router
     .put(truckController.update)
     .delete(truckController.remove);
 
-// Matches with "/api/trucks/:category
+// Matches with "/api/trucks/all/:category
 router
     .route("/all/:category")
     .get(truckController.findByCategory)

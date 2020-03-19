@@ -2,7 +2,6 @@ import React from 'react';
 import { Container } from "../../components/Grid";
 import API from "../../utils/API"
 import { usernameTransfer } from "../../components/Login";
-// import Cajunfoodtruck from "../TruckImages/Cajun foodtruck.jpg";
 import { Link } from 'react-router-dom';
 import './style.css';
 

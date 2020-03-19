@@ -17,7 +17,6 @@ export default {
 
     // Gets the truck with the given id
     updateTruck: function (id, updateTruck) {
-
         return axios.put("/api/trucks/truck/" + id, updateTruck);
     },
 
