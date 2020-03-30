@@ -36,7 +36,6 @@ class App extends React.Component {
 			<Router>
 
 				<div>
-					<ScrollToTop />
 					<Nav className="App-header" />
 					<Container fluid>
 
