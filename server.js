@@ -34,6 +34,7 @@ if (process.env.NODE_ENV === "development") {
   app.use(passport.session()); app.use(express.static(__dirname + '/client/build'))
 };
 
+app.use(passport.session());
 app.use(express.static(__dirname + '/client/build'))
 // app.use(express.static(path.join(__dirname, '../build')));
 
